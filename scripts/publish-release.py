@@ -9,6 +9,18 @@ root = Path(__file__).resolve().parents[1]
 manifest = json.loads((root / "module.json").read_text(encoding="utf-8"))
 repo = "PrevotYann/tokyo-ghoul-unofficial-fr"
 tag = "v" + manifest["version"]
+artifacts = [("module.json", "application/json"), ("manifest.json", "application/json"), (manifest["id"] + ".zip", "application/zip")]
+for filename, _ in artifacts:
+    if not (root / "dist" / filename).is_file():
+        raise SystemExit("Missing release artifact: " + filename)
+for filename in ("module.json", "manifest.json"):
+    if json.loads((root / "dist" / filename).read_text(encoding="utf-8")) != manifest:
+        raise SystemExit("Stale release manifest: " + filename)
+changelog = (root / "CHANGELOG.md").read_text(encoding="utf-8")
+section = next((section for section in changelog.split("\n## ")[1:] if section.startswith(manifest["version"] + " ")), None)
+if section is None:
+    raise SystemExit("Missing changelog for " + tag)
+notes = section.split("\n", 1)[1].strip() + "\n\nManifeste Foundry : " + manifest["manifest"]
 credentials = subprocess.run(["git", "credential", "fill"], input="protocol=https\nhost=github.com\n\n", text=True, capture_output=True, check=True)
 values = dict(line.split("=", 1) for line in credentials.stdout.splitlines() if "=" in line)
 headers = {"Authorization": "Bearer " + values["password"], "Accept": "application/vnd.github+json", "User-Agent": manifest["id"], "X-GitHub-Api-Version": "2022-11-28"}
@@ -49,10 +61,11 @@ if subprocess.run(["git", "rev-parse", "--verify", "refs/tags/" + tag], cwd=root
 git("push", "origin", tag)
 release = api("/repos/" + repo + "/releases", {
     "tag_name": tag, "name": "Tokyo Ghoul : traduction française " + tag,
-    "body": "Première traduction française pour Foundry VTT 14.368 et Tokyo Ghoul 0.2.1.\n\n312 clés d’interface et 83 entrées de compendium couvertes. Les identifiants mécaniques sont conservés.\n\nInstallation : collez l’URL de module.json dans Installer un module, activez le module et choisissez Français.\n\nManifeste : " + manifest["manifest"],
-    "draft": False, "prerelease": False
+    "body": notes,
+    "draft": True, "prerelease": False
 })
 upload = release["upload_url"].split("{")[0]
-for filename, content_type in [("module.json", "application/json"), ("manifest.json", "application/json"), (manifest["id"] + ".zip", "application/zip")]:
+for filename, content_type in artifacts:
     api(upload + "?name=" + filename, (root / "dist" / filename).read_bytes(), "POST", content_type)
+release = api("/repos/" + repo + "/releases/" + str(release["id"]), {"draft": False, "make_latest": "true"}, "PATCH")
 print("Published " + release["html_url"])

@@ -10,7 +10,7 @@ dist.mkdir(exist_ok=True)
 for filename in ("module.json", "manifest.json"):
     (dist / filename).write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 with ZipFile(dist / f'{manifest["id"]}.zip', "w", ZIP_DEFLATED) as archive:
-    for name in ("module.json", "README.md", "CHANGELOG.md", "docs", "lang", "src", "styles"):
+    for name in ("module.json", "README.md", "CHANGELOG.md", "docs", "lang", "compendium", "src", "styles"):
         entry = root / name
         for file in ([entry] if entry.is_file() else sorted(entry.rglob("*"))):
             if file.is_file():

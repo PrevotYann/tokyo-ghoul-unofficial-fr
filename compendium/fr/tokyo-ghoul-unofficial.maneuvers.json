@@ -1,0 +1,66 @@
+{
+  "label": "Manœuvres",
+  "mapping": {
+    "name": "name",
+    "description": "system.description"
+  },
+  "folders": {},
+  "entries": {
+    "b6d4244618c7fc18": {
+      "name": "Frapper",
+      "description": "Effectue une attaque de base avec une source valide."
+    },
+    "564ac202f07915e8": {
+      "name": "Se déplacer",
+      "description": "Se déplace d’un palier de portée."
+    },
+    "16e183ca15f5b215": {
+      "name": "Préparer une action",
+      "description": "Prépare une action avec un déclencheur précis."
+    },
+    "2491d3be64232a16": {
+      "name": "Reprendre son souffle",
+      "description": "Récupère de l’endurance et limite le choix de l’autre manœuvre de ce tour."
+    },
+    "6c078c2a81186597": {
+      "name": "Offensive totale",
+      "description": "Dépense les deux manœuvres pour effectuer jusqu’à cinq attaques."
+    },
+    "7db3792a7c0a32e9": {
+      "name": "Posture de contre-attaque",
+      "description": "Adopte une posture de contre-attaque jusqu’au prochain tour."
+    },
+    "8f9a1f3b38a881f8": {
+      "name": "Renforcer",
+      "description": "Active ou désactive une capacité, comme une capacité spéciale de quinque ou un kakuja."
+    },
+    "70e016dff6ef9bba": {
+      "name": "Allonger la frappe",
+      "description": "Allonge une attaque au corps à corps d’un palier de portée, au prix d’un malus de vitesse."
+    },
+    "b774765393012fc1": {
+      "name": "Saisir",
+      "description": "Effectue un test opposé de force pour agripper une cible."
+    },
+    "510145f647aa3d1a": {
+      "name": "Projeter",
+      "description": "Projette une cible agrippée."
+    },
+    "c588c2eed2464e6c": {
+      "name": "Frappe lourde",
+      "description": "Attaque coûteuse au corps à corps qui double la part des dégâts provenant de la force."
+    },
+    "c48ded3ca69a75df": {
+      "name": "Esquiver",
+      "description": "Réaction défensive utilisant la vitesse."
+    },
+    "6bdcc7fa3ff11b3d": {
+      "name": "Parer",
+      "description": "Réaction défensive utilisant l’endurance."
+    },
+    "b6e675d72997f3f1": {
+      "name": "Encaisser",
+      "description": "Encaisse l’attaque sans effectuer de jet de défense."
+    }
+  }
+}

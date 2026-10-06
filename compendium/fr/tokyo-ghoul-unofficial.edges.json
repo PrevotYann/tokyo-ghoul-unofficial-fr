@@ -1,0 +1,166 @@
+{
+  "label": "Atouts",
+  "mapping": {
+    "name": "name",
+    "description": "system.description",
+    "notes": "system.notes"
+  },
+  "folders": {
+    "Kagune Edges": "Atouts de kagune",
+    "Investigator Edges": "Atouts d’inspecteur"
+  },
+  "entries": {
+    "91713da031d5939e": {
+      "name": "Régénération accélérée",
+      "notes": "Améliore la régénération du rinkaku, avec un traitement particulier des blessures."
+    },
+    "eb3c77f5f74c2a30": {
+      "name": "Régénération de goule",
+      "notes": "Régénération de base des goules et des Quinx."
+    },
+    "231485f5d36e0448": {
+      "name": "Préhensile",
+      "notes": "Permet d’effectuer davantage d’actions de lutte avec les kagune compatibles."
+    },
+    "a02c876f7deac764": {
+      "name": "Massif",
+      "notes": "Augmente la portée effective du kagune."
+    },
+    "814adc493d0ca42c": {
+      "name": "Tranchant",
+      "notes": "Peut infliger l’état Hémorragie lorsqu’une attaque remplit les conditions requises."
+    },
+    "bbcd434ade7a9660": {
+      "name": "Contondant",
+      "notes": "Augmente les dégâts d’impact."
+    },
+    "ecf31f2c2e1e6b1a": {
+      "name": "Paix intérieure",
+      "notes": "Réussit automatiquement les tests de contrôle, mais empêche l’accès au kakuja."
+    },
+    "dd97c66bc2098e91": {
+      "name": "Déchaîné",
+      "notes": "Modifie les effets de la faim et les règles de maîtrise."
+    },
+    "306f50bc5b702488": {
+      "name": "Expert en lutte",
+      "notes": "Débloque les manœuvres Saisir et Projeter."
+    },
+    "1823d715d7bd1848": {
+      "name": "Anticipation",
+      "notes": "Améliore les jets d’esquive."
+    },
+    "bcb068a4ee8b679b": {
+      "name": "Robuste",
+      "notes": "Améliore les jets de parade."
+    },
+    "565c9b624ad962d8": {
+      "name": "Frappes rapides",
+      "notes": "Réduit le coût de l’offensive totale et augmente ses dégâts."
+    },
+    "609235dad1e31703": {
+      "name": "Exercices de respiration",
+      "notes": "Augmente l’endurance récupérée en reprenant son souffle."
+    },
+    "d5cf008b7f1b59b0": {
+      "name": "Frappes lourdes",
+      "notes": "Débloque la manœuvre Frappe lourde."
+    },
+    "3ccbf5ccaa06f87c": {
+      "name": "Cannibale",
+      "notes": "Ouvre la voie au kakuja et augmente les réserves alimentaires récupérées en dévorant une goule."
+    },
+    "a496ac1909f8a0b9": {
+      "name": "Chimère",
+      "notes": "Permet de combiner deux types de kagune, avec des règles particulières d’évolution et de kakuja."
+    },
+    "07e4c62ef33e66f1": {
+      "name": "Atout personnalisé",
+      "notes": "Effet personnalisé à définir avec le MJ."
+    },
+    "ee1fbc08ad0cb4da": {
+      "name": "Régénération accélérée",
+      "notes": "Permet à un quinque rinkaku de se réparer de lui-même."
+    },
+    "5f8325fac2459f9c": {
+      "name": "Arme de poing",
+      "notes": "Donne accès à une arme de poing utilisant des balles Q."
+    },
+    "f56e1ce0c6127eb9": {
+      "name": "Préhensile",
+      "notes": "Permet d’effectuer davantage d’actions de lutte avec les quinque compatibles."
+    },
+    "0ad159b075b4ef1b": {
+      "name": "Massif",
+      "notes": "Augmente la portée effective du quinque."
+    },
+    "1b0f9748b67f802d": {
+      "name": "Tranchant",
+      "notes": "Peut infliger l’état Hémorragie lorsqu’une attaque remplit les conditions requises."
+    },
+    "dff3cb1ab8da5d7d": {
+      "name": "Contondant",
+      "notes": "Augmente les dégâts d’impact."
+    },
+    "abd5210a902926b0": {
+      "name": "Paix intérieure",
+      "notes": "Empêche d’entrer en rage."
+    },
+    "fec62598d272d373": {
+      "name": "Déchaîné",
+      "notes": "Modifie les tests de rage et les coûts associés."
+    },
+    "17ced0dca0cda525": {
+      "name": "Expert en lutte",
+      "notes": "Débloque les manœuvres Saisir et Projeter."
+    },
+    "331939b60da9a8b0": {
+      "name": "Anticipation",
+      "notes": "Améliore les jets d’esquive."
+    },
+    "102eff74ac1aeb35": {
+      "name": "Robuste",
+      "notes": "Améliore les jets de parade."
+    },
+    "806b91c37d12a920": {
+      "name": "Frappes rapides",
+      "notes": "Réduit le coût de l’offensive totale et augmente ses dégâts."
+    },
+    "d5a07dc6282ef1de": {
+      "name": "Léger",
+      "notes": "Utilise la vitesse pour calculer les dégâts et les coûts des attaques de quinque au corps à corps."
+    },
+    "f032fa7280637e3f": {
+      "name": "Frappes lourdes",
+      "notes": "Débloque la manœuvre Frappe lourde à coût réduit."
+    },
+    "5062d7c1463c0024": {
+      "name": "Cannibale",
+      "notes": "Augmente le niveau RC effectif du quinque."
+    },
+    "e9fbcaf7811e68d9": {
+      "name": "Chimère",
+      "notes": "Permet de combiner deux types de quinque en une seule arme."
+    },
+    "45e8ddf2b75712ed": {
+      "name": "Prédateur naturel",
+      "notes": "Renforce l’avantage de type du quinque contre les goules."
+    },
+    "f2a300216b986c50": {
+      "name": "Secouriste",
+      "notes": "Permet d’utiliser des trousses de soins."
+    },
+    "00872e12a43a023d": {
+      "name": "Grenadier",
+      "notes": "Permet d’utiliser des grenades."
+    },
+    "68901292caaf9993": {
+      "name": "Capacité spéciale",
+      "notes": "Ajoute une capacité spéciale au quinque."
+    },
+    "bde23b2d1bed04b0": {
+      "name": "Atout personnalisé",
+      "notes": "Effet personnalisé à définir avec le MJ."
+    }
+  }
+}

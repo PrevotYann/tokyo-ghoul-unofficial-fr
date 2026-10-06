@@ -1,15 +1,8 @@
-.tg-system .tg-fr-preview {
-  color: var(--tg-text, #eee);
-  font-size: 0.9em;
-  line-height: 1.5;
-  margin-block: 0.25rem;
-  overflow-wrap: anywhere;
-  white-space: pre-wrap;
+/* Only active in French on the Tokyo Ghoul system. Also covers compendiums
+   rendered before the asynchronous ready hook finishes. */
+body.tg-fr-active .babele-original-name,
+body.tg-fr-active .form-group:has([name="babele.showOriginalName"]) {
+  display: none !important;
 }
-.tg-system .tg-fr-original summary {
-  cursor: pointer;
-  font-size: 0.85em;
-  margin-block: 0.35rem;
-}
-.tg-system .tg-fr-original textarea { width: 100%; }
+
 .tg-system .tg-action-row { flex-wrap: wrap; }

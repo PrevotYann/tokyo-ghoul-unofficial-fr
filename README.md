@@ -1,6 +1,6 @@
 # Tokyo Ghoul : traduction française
 
-Module français pour le système [Tokyo Ghoul: Unofficial TTRPG](https://github.com/PrevotYann/tokyo-ghoul-unofficial-foundry), à partir de la version **0.2.1**, pour **Foundry VTT 14.368**.
+Module français pour le système [Tokyo Ghoul: Unofficial TTRPG](https://github.com/PrevotYann/tokyo-ghoul-unofficial-foundry), à partir de la version **0.3.0**, pour **Foundry VTT 14.368**, avec **Babele 2.8.0 ou ultérieur**.
 
 ## Installation
 
@@ -11,20 +11,20 @@ Module français pour le système [Tokyo Ghoul: Unofficial TTRPG](https://github
    https://github.com/PrevotYann/tokyo-ghoul-unofficial-fr/releases/latest/download/module.json
    ```
 
-3. Ouvrez un monde utilisant le système Tokyo Ghoul et activez **Tokyo Ghoul : traduction française** dans la gestion des modules.
+3. Installez **Babele** et sa dépendance **libWrapper**. Ouvrez un monde utilisant le système Tokyo Ghoul et activez ces deux modules ainsi que **Tokyo Ghoul : traduction française**.
 4. Choisissez **Français** dans les paramètres de langue de Foundry, puis rechargez le monde.
 
 La release fournit également `manifest.json`, identique à `module.json`. Pour une installation manuelle, décompressez l’archive dans `Data/modules/` : le fichier doit se trouver à `Data/modules/tokyo-ghoul-unofficial-fr/module.json`.
 
 ## Contenu
 
-Le module traduit les 312 entrées de l’interface du système : fiches, création de personnage, jets, combat, progression, fabrication, notifications et paramètres. Il traduit aussi l’affichage des noms et du texte descriptif des 83 entrées des compendiums existants, sans dépendance à Babele et sans créer de compendiums en double.
+Le module traduit les 336 entrées de l’interface du système : fiches, création de personnage, jets, combat, progression, fabrication, notifications et paramètres. Babele traduit les 83 entrées des six compendiums existants : noms, descriptions, notes et effets personnalisés, ainsi que les titres des compendiums et leurs dossiers. Aucun compendium en double n’est créé.
 
 Les termes de l’univers sont conservés : kagune, quinque, kakuhou, kakuja, Quinx et cellules RC. Les enquêteurs du CCG sont désignés comme **inspecteurs**. « Edge » devient **atout** et « Gimmick » devient **capacité spéciale**. Les distances restent en pieds pour respecter les calculs du système.
 
-Le système utilise certains noms anglais pour identifier les atouts et appliquer leurs règles. Le module traduit les étiquettes visibles mais conserve les noms enregistrés, les valeurs des listes, les formules et les données de glisser-déposer. Sur les fiches d’objet, une indication française accompagne le nom d’origine. Les champs d’atouts saisis à la main doivent conserver leurs identifiants anglais ; la correspondance est disponible dans [le glossaire](docs/glossaire.md). Les recherches de compendium continuent à utiliser les noms d’origine anglais.
+Les compendiums, leurs fiches et les objets importés portent directement leurs noms et descriptions français. Les recherches de compendium utilisent les noms français. Les identifiants stables des documents, les `system.ruleId` des atouts, les références mécaniques, les formules et les valeurs des listes restent inchangés. Les champs de références d’atouts saisis à la main acceptent les identifiants de règles, par exemple `sharpened` pour **Tranchant**, comme indiqué dans [le glossaire](docs/glossaire.md).
 
-Les descriptions connues sont présentées en français sur les fiches. Le texte original reste accessible dans un volet **Texte d’origine (modifiable)**. Les textes personnels et les noms personnalisés ne sont pas traduits automatiquement. Le module ne migre pas les données du monde. En changeant de langue ou en désactivant le module puis en rechargeant, on retrouve l’affichage d’origine.
+Seul le texte français est affiché pour le contenu traduit. Aucun volet de texte d’origine n’est ajouté ; l’affichage du nom d’origine de Babele est désactivé et son option masquée en français. Les textes personnels et les noms personnalisés ne sont pas traduits automatiquement. Le module ne migre pas les données du monde. En changeant de langue ou en désactivant le module puis en rechargeant, les compendiums retrouvent leur contenu d’origine. Les objets déjà importés conservent leur traduction ; Babele permet de traduire les objets d’un acteur existant depuis sa fiche.
 
 Ce module traduit le système et son contenu existant ; il ne constitue pas une traduction intégrale du livre de règles ni de l’interface générale de Foundry. Aucun visuel officiel ni PDF du livre n’est distribué.
 
@@ -34,6 +34,7 @@ Node.js 24 et Python 3. Le dépôt du système voisin est utilisé uniquement po
 
 ```text
 npm ci
+npm run build:translations
 npm test
 npm run validate:source
 npx playwright install chromium
@@ -41,7 +42,9 @@ npm run test:foundry
 npm run release:package
 ```
 
-Les tests Foundry nécessitent un serveur v14.368 sur `http://localhost:30014`, un monde jetable `tg-qa`, un utilisateur `Gamemaster` sans mot de passe et les deux paquets installés. `TG_QA_URL` permet de modifier l’URL. Ils activent ce module dans le monde QA et configurent le navigateur en français. Ils refusent de modifier tout autre monde. Les rapports et captures sont placés dans `artifacts/`, exclu du dépôt.
+`npm run build:translations` reprend les identifiants et mappings des modèles anglais dans `babele/en/` du système et les traduit avec `lang/content-fr.json`. Il refuse les valeurs sans traduction. `npm run validate:source` vérifie aussi les fichiers Babele, les dossiers, les identifiants et les mappings.
+
+Les tests Foundry nécessitent un serveur v14.368 sur `http://localhost:30014`, un monde jetable `tg-qa`, un utilisateur `Gamemaster` sans mot de passe et le système, ce module, Babele et libWrapper installés. `TG_QA_URL` permet de modifier l’URL. Ils activent les modules dans le monde QA et configurent le navigateur en français. Ils refusent de modifier tout autre monde. Les rapports et captures sont placés dans `artifacts/`, exclu du dépôt.
 
 Le paquet installable et ses deux manifestes sont produits dans `dist/`. Après validation, `python scripts/publish-release.py` crée si nécessaire le dépôt public du compte `PrevotYann`, pousse le commit et le tag de version, puis publie les trois fichiers de release. Ce script utilise les identifiants GitHub du gestionnaire d’identifiants Git, sans les écrire dans le dépôt. Pour une nouvelle version, mettez à jour `module.json`, `package.json`, l’URL de téléchargement et le changelog avant de reconstruire le paquet.
 

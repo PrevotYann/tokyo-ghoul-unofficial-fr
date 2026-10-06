@@ -1,0 +1,31 @@
+{
+  "label": "Modèles de kagune",
+  "mapping": {
+    "name": "name",
+    "description": "system.description",
+    "dynamicNotes": "system.dynamicNotes"
+  },
+  "folders": {},
+  "entries": {
+    "53a68de271e21a67": {
+      "name": "Kagune ukaku — modèle",
+      "description": "Modèle de kagune rapide, spécialisé dans les attaques par projectiles.",
+      "dynamicNotes": ""
+    },
+    "5231a58a82cdce0d": {
+      "name": "Kagune koukaku — modèle",
+      "description": "Modèle de kagune lourd, adapté au combat rapproché.",
+      "dynamicNotes": ""
+    },
+    "5bc18eb9726cef9e": {
+      "name": "Kagune rinkaku à tentacules — modèle",
+      "description": "Modèle de kagune souple, adapté au combat à moyenne portée.",
+      "dynamicNotes": ""
+    },
+    "2fe1e6523c5c84e0": {
+      "name": "Kagune bikaku à queue — modèle",
+      "description": "Modèle de kagune équilibré, adapté au combat à moyenne portée.",
+      "dynamicNotes": ""
+    }
+  }
+}

@@ -8,6 +8,9 @@ test("module manifest restricts activation to the compatible system and v14",()=
   assert.equal(manifest.compatibility.maximum,"14");
   assert.equal(manifest.relationships.systems[0].id,"tokyo-ghoul-unofficial");
   assert.equal(manifest.languages[0].lang,"fr");
+  assert.equal(manifest.relationships.systems[0].compatibility.minimum,"0.3.0");
+  assert.equal(manifest.relationships.requires[0].id,"babele");
+  assert.equal(manifest.relationships.requires[0].compatibility.minimum,"2.8.0");
   assert.ok(manifest.download.includes(`/v${manifest.version}/`));
 });
 test("every runtime manifest path exists",async()=>{

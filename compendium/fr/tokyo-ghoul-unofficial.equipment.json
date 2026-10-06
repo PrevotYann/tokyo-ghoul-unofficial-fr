@@ -1,0 +1,68 @@
+{
+  "label": "Équipement",
+  "mapping": {
+    "name": "name",
+    "description": "system.description",
+    "dynamicEffect": "system.dynamicEffect"
+  },
+  "folders": {
+    "Consumables": "Consommables",
+    "Gimmicks": "Capacités spéciales",
+    "Kakuja Armor": "Armures kakuja"
+  },
+  "entries": {
+    "d39c1ef79213532c": {
+      "name": "Trousse de soins — modèle",
+      "description": "Trousse permettant de soigner un personnage et de supprimer certains états, avec intervention du joueur ou du MJ."
+    },
+    "991127809b4dd7d2": {
+      "name": "Grenade à fragmentation — modèle",
+      "description": "Grenade explosive infligeant des dégâts dans une zone de courte portée."
+    },
+    "70eda0a47ecb23f6": {
+      "name": "Grenade incendiaire — modèle",
+      "description": "Grenade de zone qui inflige l’état En feu."
+    },
+    "6b1e8797d15703d6": {
+      "name": "Grenade à inhibiteurs RC — modèle",
+      "description": "Crée temporairement un nuage d’inhibiteurs RC."
+    },
+    "464c09eae9b5983a": {
+      "name": "Balle Q — modèle",
+      "description": "Munition d’arme de poing pour les attaques de quinque nécessitant une intervention du joueur ou du MJ."
+    },
+    "ca5f87508bf8b903": {
+      "name": "Capacité offensive",
+      "description": "Attaque spéciale utilisant le niveau RC et une caractéristique choisie.",
+      "dynamicEffect": ""
+    },
+    "1c2a735a480951ed": {
+      "name": "Capacité défensive",
+      "description": "Forme défensive qui peut faciliter une esquive ou une parade.",
+      "dynamicEffect": ""
+    },
+    "046c6570f1406442": {
+      "name": "Changement de forme",
+      "description": "Forme alternative accordant un bonus à l’attaque ou aux dégâts.",
+      "dynamicEffect": ""
+    },
+    "a413befe06acdcc6": {
+      "name": "Capacité utilitaire",
+      "description": "Forme utilitaire accordant temporairement des atouts.",
+      "dynamicEffect": ""
+    },
+    "75adddb9a0f3d82d": {
+      "name": "Capacité personnalisée",
+      "description": "Capacité spéciale dont l’effet est à définir avec le MJ.",
+      "dynamicEffect": ""
+    },
+    "7463a1a1209b94fc": {
+      "name": "Armure kakuja d’assaut",
+      "description": "Réduit les dégâts subis et accorde le bonus d’armure choisi. Dans le chapitre Équipement, la réduction dépend du niveau RC de l’armure et la caractéristique d’attaque choisie est doublée. Un paramètre du monde permet d’utiliser la variante contradictoire du chapitre Quinx. Les dégâts parasitaires commencent après cinq tours."
+    },
+    "75f159f3d3d3221b": {
+      "name": "Armure kakuja de vitesse",
+      "description": "Réduit les dégâts subis et accorde le bonus d’armure choisi. Dans le chapitre Équipement, la réduction dépend du niveau RC de l’armure et la caractéristique d’attaque choisie est doublée. Un paramètre du monde permet d’utiliser la variante contradictoire du chapitre Quinx. Les dégâts parasitaires commencent après cinq tours."
+    }
+  }
+}

@@ -1,4 +1,19 @@
-# Validation de la version 1.0.0
+# Validation de la version 1.1.0
+
+Vérifiée le 6 octobre 2026 sur Foundry VTT **14.368**, système **0.3.0**, Babele **2.9.1** et libWrapper **1.13.5.1**, dans le monde jetable `tg-qa`, avec les compendiums reconstruits depuis les sources du système.
+
+- 336 clés d’interface contrôlées ; paramètres `{…}` conservés.
+- 83 entrées, six compendiums et sept fichiers Babele : noms, descriptions, notes, notes dynamiques et effets, titres et dossiers.
+- Identifiants de documents, clés des dossiers et mappings identiques aux modèles anglais ; aucune propriété mécanique ajoutée aux traductions.
+- Quatre tests Node : couverture Babele, doublons de noms, enregistrement, visibilité française, groupes de compendium v14 et manifeste.
+- 467 vérifications dans Chromium et Foundry : documents et index français, champs éditables des fiches, recherche française, dossiers, import, identifiants mécaniques, bonus de blocage de Robuste, création de personnage et retour à l’anglais.
+- Affichage Babele des noms d’origine désactivé malgré une préférence antérieure active ; option masquée en français ; aucun volet de texte d’origine.
+- Aucune exception JavaScript pendant la vérification finale. Rapport et capture dans `artifacts/`.
+- Les deux groupes du système bénéficient d’un complément de traduction en mémoire pour la collection de dossiers de compendium de Foundry 14, que Babele 2.9.1 ne traite pas directement.
+
+Les compendiums d’origine ne sont pas traduits sur disque. Les objets importés conservent leur texte français lors d’un changement de langue ; les contenus personnalisés ne sont pas réécrits.
+
+## Validation historique de la version 1.0.0
 
 Vérifiée le 6 octobre 2026 sur Foundry VTT **14.368**, système **0.2.1**, dans le monde jetable `tg-qa`.
 

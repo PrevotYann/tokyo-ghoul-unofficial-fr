@@ -1,0 +1,30 @@
+{
+  "label": "Modèles de quinque",
+  "mapping": {
+    "name": "name",
+    "description": "system.description"
+  },
+  "folders": {},
+  "entries": {
+    "18d6e5bc63760da1": {
+      "name": "Quinque ukaku — modèle",
+      "description": "Modèle de quinque léger, conçu pour le combat à distance."
+    },
+    "0c744b7abc79250e": {
+      "name": "Quinque koukaku en bouclier — modèle",
+      "description": "Modèle de quinque lourd, conçu pour la défense."
+    },
+    "122e2a46968d6843": {
+      "name": "Quinque rinkaku — modèle",
+      "description": "Modèle de quinque spécialisé dans le combat à moyenne portée."
+    },
+    "698f097f7a2d513d": {
+      "name": "Quinque bikaku — modèle",
+      "description": "Modèle de quinque équilibré, adapté au combat à moyenne portée."
+    },
+    "664e9c97468096d4": {
+      "name": "Arme de poing du CCG — modèle",
+      "description": "Modèle de quinque doté d’une arme de poing."
+    }
+  }
+}

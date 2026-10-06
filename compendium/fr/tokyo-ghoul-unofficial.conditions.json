@@ -1,0 +1,50 @@
+{
+  "label": "États",
+  "mapping": {
+    "name": "name",
+    "description": "system.description"
+  },
+  "folders": {},
+  "entries": {
+    "95fc4c3224594a3a": {
+      "name": "Hémorragie",
+      "description": "Inflige une perte de vitalité en début de tour, cumulable. La régénération peut réduire le nombre de cumuls."
+    },
+    "fc36a7072713788d": {
+      "name": "En feu",
+      "description": "État de brûlure cumulable. Un test d’endurance permet d’éteindre les flammes."
+    },
+    "9ff93b28731648ec": {
+      "name": "Agrippé",
+      "description": "Limite les déplacements et les attaques jusqu’à ce que le personnage se dégage."
+    },
+    "9eb9ed2fbb7a7920": {
+      "name": "Faim active",
+      "description": "Les effets de la faim s’appliquent et la régénération est inhibée."
+    },
+    "533548df08f5d0ab": {
+      "name": "Rage active",
+      "description": "État de rage accordant des points de caractéristiques temporaires, avec des coûts en endurance."
+    },
+    "0863a72a0630d459": {
+      "name": "Régénération inhibée",
+      "description": "Empêche la régénération tant que cet état est actif."
+    },
+    "018f23e439512e10": {
+      "name": "Kakuja actif",
+      "description": "Indique que le kakuja est actif."
+    },
+    "a4cc4ce88aad7afd": {
+      "name": "Perte de contrôle",
+      "description": "Indique une perte de contrôle du kakuja."
+    },
+    "c039c40d96e5d2d3": {
+      "name": "Nuage d’inhibiteurs RC",
+      "description": "Effet de zone qui inhibe les capacités liées aux cellules RC."
+    },
+    "ab3cc84fdd4779f3": {
+      "name": "Quinque brisé",
+      "description": "Indique que le quinque est brisé et inutilisable jusqu’à sa réparation."
+    }
+  }
+}

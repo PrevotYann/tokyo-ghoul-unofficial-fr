@@ -25,7 +25,7 @@ Les formules conservent les abréviations anglaises utilisées par le système. 
 
 ## Identifiants des atouts
 
-Dans les champs de saisie manuelle et les macros, utilisez la colonne anglaise.
+Les noms visibles sont français. Dans les champs de références d’atouts et les macros qui attendent un identifiant mécanique, utilisez le `system.ruleId` : le nom anglais en minuscules, avec des tirets entre les mots (par exemple `high-speed-regeneration`, `sharpened`, `inner-peace`). Les noms des objets peuvent être traduits ou personnalisés sans changer cet identifiant.
 
 | Identifiant | Nom affiché |
 |---|---|
