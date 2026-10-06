@@ -8,10 +8,10 @@ const content = await read("lang/content-fr.json");
 test("Babele packs cover translated titles, folders and all 83 entries using stable IDs", async () => {
   let count = 0;
   for (const file of await fs.readdir(new URL("../compendium/fr/", import.meta.url))) {
+    if (file.endsWith(".last-delivery.json")) continue;
     const pack = await read(`compendium/fr/${file}`);
     if (file.endsWith("._packs-folders.json")) {
-      assert.equal(pack.entries["Tokyo Ghoul - Rules"].name, content["Tokyo Ghoul - Rules"]);
-      assert.equal(pack.entries["Tokyo Ghoul - Arsenal"].name, content["Tokyo Ghoul - Arsenal"]);
+      for (const name of ["Tokyo Ghoul - Rules", "Tokyo Ghoul - Arsenal", "Tokyo Ghoul - Adventures"]) assert.equal(pack.entries[name], content[name]);
       continue;
     }
     assert.ok(Object.values(content).includes(pack.label));
@@ -53,7 +53,9 @@ test("French runtime registers Babele and disables and hides original names only
     assert.equal(folders[0].originalName, "Tokyo Ghoul - Rules");
     assert.equal(folders[1].name, "Tokyo Ghoul - Rules");
     const registrations = [];
-    callbacks.get("babele.init")({register: source => registrations.push(source)});
+    const converters = {};
+    callbacks.get("babele.init")({register: source => registrations.push(source), registerConverters: values => Object.assign(converters, values)});
+    assert.equal(typeof converters.tgAdventureDocuments, "function");
     assert.deepEqual(registrations, [{module: "tokyo-ghoul-unofficial-fr", lang: "fr", dir: "compendium/fr"}]);
     await callbacks.get("ready")();
     assert.equal(originalName, true);

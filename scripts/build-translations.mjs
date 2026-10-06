@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import path from "node:path";
+import {buildAdventureTranslation} from "./adventure-translations.mjs";
 
 const source = process.env.TG_SYSTEM_PATH ?? "../tokyo-ghoul-unofficial-foundry";
 const content = JSON.parse(await fs.readFile("lang/content-fr.json", "utf8"));
@@ -17,9 +18,14 @@ for (const file of await fs.readdir(path.join(source, "babele/en"))) {
   const pack = JSON.parse(await fs.readFile(path.join(source, "babele/en", file), "utf8"));
   if (pack.label) pack.label = translate(pack.label);
   for (const key of Object.keys(pack.folders ?? {})) pack.folders[key] = translate(pack.folders[key]);
-  for (const entry of Object.values(pack.entries)) {
+  for (const [id, entry] of Object.entries(pack.entries)) {
+    if (typeof entry === "string") {
+      pack.entries[id] = translate(entry);
+      continue;
+    }
     for (const key of Object.keys(entry)) entry[key] = translate(entry[key]);
   }
   await fs.writeFile(path.join(directory, file), JSON.stringify(pack, null, 2) + "\n");
 }
+await fs.writeFile(path.join(directory, "tokyo-ghoul-unofficial.last-delivery.json"), JSON.stringify(await buildAdventureTranslation(source), null, 2) + "\n");
 console.log(`French Babele translations written to ${directory}.`);

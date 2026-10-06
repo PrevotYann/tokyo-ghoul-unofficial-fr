@@ -1,4 +1,13 @@
-# Validation de la version 1.1.0
+# Validation de la version 1.2.0
+
+- Couverture vérifiée depuis les sources du système **0.4.1** : 337 clés d’interface, 83 entrées de règles et huit fichiers Babele, dont l’aventure complète.
+- Sept tests Node réussis : couverture, conservation des données mécaniques, textes des douze journaux, structure HTML, tableaux, UUID et libellés liés, noms des objets et pions, absence de mutation des sources et manifeste.
+- Import natif de **La Dernière Livraison** contrôlé dans Foundry **14.368**, Babele **2.9.1** : douze personnages, quinze objets, douze journaux, trois scènes, six dossiers et dix repères traduits. Liens résolus, journaux privés et biographies affichées sur les fiches. Documents de test supprimés après vérification.
+- Le contrôle des textes importés tient compte de la normalisation HTML appliquée par Foundry, tout en comparant le texte affiché. Les tests Node vérifient en plus les balises et UUID avant import.
+- **2 017 vérifications Foundry réussies**, sans exception JavaScript : import de l’aventure, traductions des compendiums existants, recherche, fiches, fonctionnement des atouts traduits et retour à l’anglais. Rapport dans `artifacts/foundry-results.json`.
+- Archive installable v1.2.0 construite et contrôlée ; traduction de l’aventure et convertisseur inclus.
+
+## Validation historique de la version 1.1.0
 
 Vérifiée le 6 octobre 2026 sur Foundry VTT **14.368**, système **0.3.0**, Babele **2.9.1** et libWrapper **1.13.5.1**, dans le monde jetable `tg-qa`, avec les compendiums reconstruits depuis les sources du système.
 

@@ -1,0 +1,1262 @@
+{
+  "label": "La Dernière Livraison • Scénario en une séance",
+  "mapping": {
+    "name": "name",
+    "caption": "caption",
+    "description": "description",
+    "actors": {
+      "path": "actors",
+      "converter": "tgAdventureDocuments"
+    },
+    "items": {
+      "path": "items",
+      "converter": "tgAdventureDocuments"
+    },
+    "journal": {
+      "path": "journal",
+      "converter": "tgAdventureDocuments"
+    },
+    "scenes": {
+      "path": "scenes",
+      "converter": "tgAdventureDocuments"
+    },
+    "folders": {
+      "path": "folders",
+      "converter": "tgAdventureDocuments"
+    }
+  },
+  "entries": {
+    "7f2ea9ed6ef913a8": {
+      "name": "La Dernière Livraison",
+      "caption": "Un scénario original dans l’univers de Tokyo Ghoul pour 4 à 6 joueurs.",
+      "description": "<p>Une livraison volée révèle le trafic d’êtres humains d’un fournisseur de nourriture pour goules. Six prétirés originaux, trois scènes illustrées, un guide complet pour le MJ, des dossiers confidentiels, des documents à remettre aux joueurs, des PNJ et de l’équipement. Importez tout le contenu, puis lisez « 00 • MJ — Pour commencer ». L’aventure est intégralement en français.</p>",
+      "actors": {
+        "b3fc16e43dfb0cf4": {
+          "name": "Aya Teshima",
+          "system": {
+            "biography": {
+              "appearance": "<p>Protection des témoins et appui à distance</p>",
+              "personality": "<p>Yui est votre voisine d’enfance. Daichi est votre mentor.</p>",
+              "backstory": "<p>Vous avez contacté Yui avant de signaler l’affaire. Ramenez-la vivante.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "22e63be8ccffabc1": {
+              "name": "Signal neuf",
+              "system": {
+                "description": "<p>Quinque ukaku d’origine du personnage (protection des témoins et appui à distance). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            },
+            "37e877c7dcc94f35": {
+              "name": "Trousse médicale de terrain",
+              "system": {
+                "description": "Utilisez la procédure de trousse médicale du système ; respectez les restrictions liées à la classe de la cible."
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Aya Teshima"
+          }
+        },
+        "dcbf3bc4e6e3f452": {
+          "name": "Ren Kisaragi",
+          "system": {
+            "biography": {
+              "appearance": "<p>Coursier et guide du quartier</p>",
+              "personality": "<p>Emi vous a hébergé ; Mio répare votre équipement.</p>",
+              "backstory": "<p>Vous avez ignoré une étiquette suspecte lors de votre dernière livraison. Dites la vérité avant que quelqu’un d’autre n’en paie le prix.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "01431f4becba9659": {
+              "name": "Lacet",
+              "system": {
+                "description": "<p>Kagune bikaku d’origine du personnage (coursier et guide du quartier). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Ren Kisaragi"
+          }
+        },
+        "e265cdcde8fcd05d": {
+          "name": "Mio Naruse",
+          "system": {
+            "biography": {
+              "appearance": "<p>Protection et réparations</p>",
+              "personality": "<p>Ren apporte les provisions. Aya vous a un jour laissé partir.</p>",
+              "backstory": "<p>Kurose sait où vit le jeune que vous avez recueilli. Protégez-le sans trahir Emi.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "ed0a4712f45918a7": {
+              "name": "Abri de pluie",
+              "system": {
+                "description": "<p>Kagune koukaku d’origine du personnage (protection et réparations). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Mio Naruse"
+          }
+        },
+        "6f1d242fa0b3469f": {
+          "name": "Daichi Ueno",
+          "system": {
+            "biography": {
+              "appearance": "<p>Responsable d’enquête et défense rapprochée</p>",
+              "personality": "<p>Aya est votre cadette. Nao mérite d’être traité comme une personne.</p>",
+              "backstory": "<p>Votre supérieur veut une arrestation simple. Récupérez des preuves qui résisteront à un rapport honnête.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "851e55f097631e89": {
+              "name": "Gardien du pont",
+              "system": {
+                "description": "<p>Quinque koukaku d’origine du personnage (responsable d’enquête et défense rapprochée). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            },
+            "c68c75df886422ff": {
+              "name": "Trousse médicale de terrain",
+              "system": {
+                "description": "Utilisez la procédure de trousse médicale du système ; respectez les restrictions liées à la classe de la cible."
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Daichi Ueno"
+          }
+        },
+        "d9d1cabae5a178c8": {
+          "name": "Nao Fushimi",
+          "system": {
+            "biography": {
+              "appearance": "<p>Liaison et appui polyvalent au sauvetage</p>",
+              "personality": "<p>Daichi prend de vos nouvelles sans réclamer de résultats d’examens.</p>",
+              "backstory": "<p>Vous craignez qu’une perte de contrôle ne discrédite la trêve. Demandez de l’aide avant d’en arriver là.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "a4fbf958ca2eefee": {
+              "name": "Suture",
+              "system": {
+                "description": "<p>Kagune rinkaku d’origine du personnage (liaison et appui polyvalent au sauvetage). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            },
+            "77f1396df8945b82": {
+              "name": "Ligne silencieuse",
+              "system": {
+                "description": "<p>Quinque bikaku d’origine du personnage (liaison et appui polyvalent au sauvetage). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            },
+            "985d6d03153174b1": {
+              "name": "Trousse médicale de terrain",
+              "system": {
+                "description": "Utilisez la procédure de trousse médicale du système ; respectez les restrictions liées à la classe de la cible."
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Nao Fushimi"
+          }
+        },
+        "603f09339dce02cc": {
+          "name": "Sora Amemiya",
+          "system": {
+            "biography": {
+              "appearance": "<p>Reconnaissance et photographie</p>",
+              "personality": "<p>Yui a transporté une pellicule qui a révélé un précédent enlèvement.</p>",
+              "backstory": "<p>Un journaliste possède déjà une photo floue. Sauvez les personnes photographiées avant de décider quoi publier.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "a921db1335b99e78": {
+              "name": "Poids plume",
+              "system": {
+                "description": "<p>Kagune ukaku d’origine du personnage (reconnaissance et photographie). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+              }
+            }
+          },
+          "prototypeToken": {
+            "name": "Sora Amemiya"
+          }
+        },
+        "8e05d06cad5d2f11": {
+          "name": "Emi Hayase • Propriétaire du café",
+          "system": {
+            "biography": {
+              "appearance": "<p>Alliée non combattante</p>",
+              "personality": "<p>Protège les goules vulnérables et veille à la neutralité de la rencontre.</p>",
+              "backstory": "<p>Connaît l’adresse de la clinique et la donnera sans contrepartie.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "prototypeToken": {
+            "name": "Emi Hayase • Propriétaire du café"
+          }
+        },
+        "83bcc6b88a48e6b2": {
+          "name": "Yui Matsuda • Livreuse disparue",
+          "system": {
+            "biography": {
+              "appearance": "<p>Témoin humaine non combattante</p>",
+              "personality": "<p>Fait confiance à Aya et à Ren.</p>",
+              "backstory": "<p>A copié le registre de la clinique. Peut identifier Kurose et ouvrir la cage de la gare.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "prototypeToken": {
+            "name": "Yui Matsuda • Livreuse disparue"
+          }
+        },
+        "9990effb4cbad3b4": {
+          "name": "Haru Watanabe • Captif",
+          "system": {
+            "biography": {
+              "appearance": "<p>Captif humain non combattant</p>",
+              "personality": "<p>Veut que les deux patients soient sauvés.</p>",
+              "backstory": "<p>Peut marcher avec une escorte ; ne porte aucune arme.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "prototypeToken": {
+            "name": "Haru Watanabe • Captif"
+          }
+        },
+        "c9ed3f809b60fdf2": {
+          "name": "Riku Inose • Homme de main de la clinique",
+          "system": {
+            "biography": {
+              "appearance": "<p>Homme de main sous la contrainte</p>",
+              "personality": "<p>Kurose menace ses proches.</p>",
+              "backstory": "<p>Se rend à la moitié de sa vitalité ou accepte une protection crédible pour évacuer ses proches.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "1fa250c5f92e1ef7": {
+              "name": "Sillage de fer"
+            }
+          },
+          "prototypeToken": {
+            "name": "Riku Inose • Homme de main de la clinique"
+          }
+        },
+        "bb3383b578af98c0": {
+          "name": "Chika Fuse • Guetteuse de la gare de fret",
+          "system": {
+            "biography": {
+              "appearance": "<p>Éclaireuse sous la contrainte</p>",
+              "personality": "<p>Son frère est retenu en otage pour garantir son obéissance.</p>",
+              "backstory": "<p>Connaît le passage de service sud et peut rejoindre le groupe.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "0d2f2f7263b81ad4": {
+              "name": "Pluie de plumes"
+            }
+          },
+          "prototypeToken": {
+            "name": "Chika Fuse • Guetteuse de la gare de fret"
+          }
+        },
+        "1530b85c1ded8901": {
+          "name": "Masato Kurose • Palette",
+          "system": {
+            "biography": {
+              "appearance": "<p>Fournisseur goule expérimenté ; antagoniste original</p>",
+              "personality": "<p>Se sert des goules dépendantes pour faire pression.</p>",
+              "backstory": "<p>Un meurtrier qui se cache derrière des registres mortuaires falsifiés. Négocie lorsque ses crimes sont révélés ; se rend à 24 points de vitalité si la fuite est impossible.</p>",
+              "goals": "<p>Retrouver Yui, sauver les patients et décider à qui remettre les preuves.</p>"
+            },
+            "automation": {
+              "ruleNotes": "<p>Profil du scénario La Dernière Livraison. Le MJ arbitre les objectifs narratifs et les redditions. Utilisez les attaques, les réactions et l’automatisation des ressources existantes du système.</p>"
+            }
+          },
+          "items": {
+            "04a5dd9d101251ed": {
+              "name": "Registre rouge"
+            }
+          },
+          "prototypeToken": {
+            "name": "Masato Kurose • Palette"
+          }
+        }
+      },
+      "items": {
+        "1156eb702d3460e5": {
+          "name": "Signal neuf",
+          "system": {
+            "description": "<p>Quinque ukaku d’origine du personnage (protection des témoins et appui à distance). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "f154565489496572": {
+          "name": "Lacet",
+          "system": {
+            "description": "<p>Kagune bikaku d’origine du personnage (coursier et guide du quartier). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "a9e3fc0ee389821d": {
+          "name": "Abri de pluie",
+          "system": {
+            "description": "<p>Kagune koukaku d’origine du personnage (protection et réparations). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "aafdcb7b8b0dd5e9": {
+          "name": "Gardien du pont",
+          "system": {
+            "description": "<p>Quinque koukaku d’origine du personnage (responsable d’enquête et défense rapprochée). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "ddbc671204042a55": {
+          "name": "Suture",
+          "system": {
+            "description": "<p>Kagune rinkaku d’origine du personnage (liaison et appui polyvalent au sauvetage). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "11780bb079111300": {
+          "name": "Ligne silencieuse",
+          "system": {
+            "description": "<p>Quinque bikaku d’origine du personnage (liaison et appui polyvalent au sauvetage). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "2b206ef148dea92c": {
+          "name": "Poids plume",
+          "system": {
+            "description": "<p>Kagune ukaku d’origine du personnage (reconnaissance et photographie). Aucun atout facultatif ; le créateur de personnage convertit les emplacements de départ inutilisés en niveau RC.</p>"
+          }
+        },
+        "0d650993987d448c": {
+          "name": "Sillage de fer"
+        },
+        "04d96286a5b6337c": {
+          "name": "Pluie de plumes"
+        },
+        "ea6929cfacef11a8": {
+          "name": "Registre rouge"
+        },
+        "56a5a2e57669416c": {
+          "name": "Registre original de Kurose",
+          "system": {
+            "description": "<p>Identités d’origine des victimes, dates et ordres d’enlèvement signés. Pièce à conviction uniquement ; aucun bonus de caractéristique.</p>"
+          }
+        },
+        "aa39bb9dac759635": {
+          "name": "Clés de service de Shigure",
+          "system": {
+            "description": "<p>Ouvre la porte de service de la clinique et le loquet de la gare. Code d’accès à la cage : 0417. Aucun effet au combat.</p>"
+          }
+        },
+        "d51305936d832c77": {
+          "name": "Téléphone fêlé de Yui",
+          "system": {
+            "description": "<p>Brouillon récupéré et données de localisation menant à la clinique d’Aobane. Pièce à conviction uniquement.</p>"
+          }
+        },
+        "3068da20a39fe0d0": {
+          "name": "Appareil photo étanche",
+          "system": {
+            "description": "<p>Permet de conserver des photos des preuves par une interaction ordinaire arbitrée par le MJ. Aucun modificateur de jet automatique.</p>"
+          }
+        },
+        "425f188fdf60742a": {
+          "name": "Trousse médicale de terrain",
+          "system": {
+            "description": "Utilisez la procédure de trousse médicale du système ; respectez les restrictions liées à la classe de la cible."
+          }
+        }
+      },
+      "scenes": {
+        "6e10d0826e112f4a": {
+          "name": "01 • Pluie sur Sazanami",
+          "tokens": {
+            "ce14a8ebaa14f4d7": {
+              "name": "Emi Hayase • Propriétaire du café"
+            },
+            "fad364ca1dc4f1cb": {
+              "name": "Chika Fuse • Guetteuse de la gare de fret"
+            },
+            "c8b3cfa007a45f8f": {
+              "name": "Riku Inose • Homme de main de la clinique"
+            },
+            "2ddfcd51caa7211c": {
+              "name": "Aya Teshima"
+            },
+            "19d1e50c6156d8eb": {
+              "name": "Ren Kisaragi"
+            },
+            "eaf1cf03e1a2ac2c": {
+              "name": "Mio Naruse"
+            },
+            "ca7ab16a8807412d": {
+              "name": "Daichi Ueno"
+            },
+            "5bf095dedad19b09": {
+              "name": "Nao Fushimi"
+            },
+            "31c09062792ed822": {
+              "name": "Sora Amemiya"
+            }
+          },
+          "notes": {
+            "f9753c574f579a48": {
+              "text": "Café"
+            },
+            "2516d559a0a15cae": {
+              "text": "Fourgon de livraison"
+            },
+            "819508cd912271fa": {
+              "text": "Aire de chargement"
+            }
+          },
+          "walls": {
+            "11cee594756752e1": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "dc8221f359ceb880": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "ed24bc54f1ad5ed5": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "00a2744808e8d9d8": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte de service arrière du café"
+                }
+              }
+            },
+            "617ff2610d45d7f1": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "8f0461d62904ef5d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "574ae964cf23604b": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Entrée du café"
+                }
+              }
+            },
+            "fad36c3f0e80ecca": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur du café"
+                }
+              }
+            },
+            "283d45d296d805c0": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-ouest"
+                }
+              }
+            },
+            "af8c6ed392c14a39": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-ouest"
+                }
+              }
+            },
+            "2718749f035fc608": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-ouest"
+                }
+              }
+            },
+            "38b5fcbc2a9ad279": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-ouest"
+                }
+              }
+            },
+            "e5eacf8b2b8d7112": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-est"
+                }
+              }
+            },
+            "4e642c9b017c2994": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-est"
+                }
+              }
+            },
+            "4f32675fcffcea2b": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-est"
+                }
+              }
+            },
+            "0b5343286de722e2": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bâtiment sud-est"
+                }
+              }
+            },
+            "0050d9c48a8d393d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison"
+                }
+              }
+            },
+            "28e63ec46458f1b0": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison"
+                }
+              }
+            },
+            "2deb87a51e31500d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison"
+                }
+              }
+            },
+            "03ffc03ebb041185": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison"
+                }
+              }
+            },
+            "8b947e2bcbef54bb": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture de l’aire de chargement"
+                }
+              }
+            },
+            "77a6c1babed33286": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Limite de l’aire de chargement"
+                }
+              }
+            },
+            "6a18a8266761725f": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Limite de l’aire de chargement"
+                }
+              }
+            },
+            "14e1e1b2ce76db11": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture de l’aire de chargement"
+                }
+              }
+            },
+            "bd263ca05bb2f6ff": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Portail de l’aire de chargement"
+                }
+              }
+            },
+            "b1482abcd5705dc7": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture de l’aire de chargement"
+                }
+              }
+            }
+          },
+          "lights": {
+            "1d67e7ed0c5b09a1": {},
+            "a2394c1a514923ad": {},
+            "d8d58a84f7b8d4e7": {},
+            "a4c66a073c112d4d": {},
+            "e5f2c06d23f05fbf": {},
+            "8ac5a38c6c238ecc": {}
+          }
+        },
+        "c26515ce9312f9bb": {
+          "name": "02 • Clinique d’Aobane",
+          "tokens": {
+            "933130fcaa8fd03f": {
+              "name": "Yui Matsuda • Livreuse disparue"
+            },
+            "11c8c87b7e4eac2d": {
+              "name": "Riku Inose • Homme de main de la clinique"
+            },
+            "81385a7d6ef5984a": {
+              "name": "Chika Fuse • Guetteuse de la gare de fret"
+            },
+            "2a7f1c6684be95fd": {
+              "name": "Aya Teshima"
+            },
+            "ef824f6c893b08c6": {
+              "name": "Ren Kisaragi"
+            },
+            "6b59af93de9d4500": {
+              "name": "Mio Naruse"
+            },
+            "92715921ccc35106": {
+              "name": "Daichi Ueno"
+            },
+            "422e09dcb1424480": {
+              "name": "Nao Fushimi"
+            },
+            "8dc4a58423c4e683": {
+              "name": "Sora Amemiya"
+            }
+          },
+          "notes": {
+            "bb0a6b1392d509f7": {
+              "text": "Accueil"
+            },
+            "cc826fcdcf18cc0a": {
+              "text": "Salle de soins"
+            },
+            "c84b853a790e29a5": {
+              "text": "Chambre froide"
+            },
+            "2b39fe1856cf4abc": {
+              "text": "Bureau"
+            }
+          },
+          "walls": {
+            "12b0b1f98038524d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "cf1327ee489ba189": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "b0673077035d2045": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "03ba51bb85e54d78": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte de service latérale de la clinique"
+                }
+              }
+            },
+            "0921438927996f8a": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "256ce412c28cc114": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "9ea182fe74d14ae3": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "1b81abe85928413c": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Entrée principale de la clinique"
+                }
+              }
+            },
+            "3e3288f18d3aee8f": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "7c553389e6373210": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Extérieur de la clinique"
+                }
+              }
+            },
+            "df68791316994e51": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de l’accueil"
+                }
+              }
+            },
+            "f05510d4caa0b741": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte de l’accueil"
+                }
+              }
+            },
+            "d71125f7c1ba1d23": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Séparation entre l’accueil et la chambre froide"
+                }
+              }
+            },
+            "c6938b6fd9b2d17d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de l’accueil"
+                }
+              }
+            },
+            "bb6ae2592d5046f3": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de la chambre froide"
+                }
+              }
+            },
+            "931891c5dc990f1a": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte de la chambre froide"
+                }
+              }
+            },
+            "0cec5dd2b0c8d638": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de la chambre froide"
+                }
+              }
+            },
+            "bb62b7894fb85bd9": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de la salle de soins"
+                }
+              }
+            },
+            "e67d817f59df566c": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte de la salle de soins"
+                }
+              }
+            },
+            "1f1c4218de8d713b": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir de la salle de soins"
+                }
+              }
+            },
+            "1662069522937ef4": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Séparation entre la salle de soins et le bureau"
+                }
+              }
+            },
+            "298e5eb457a34822": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir du bureau"
+                }
+              }
+            },
+            "d590540138296c33": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Porte du bureau"
+                }
+              }
+            },
+            "94fc28c09a12c5fc": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Cloison du couloir du bureau"
+                }
+              }
+            }
+          },
+          "lights": {
+            "824ebbfb569fd743": {},
+            "f5eed2d666931ffc": {},
+            "e5f9edeed3556864": {},
+            "81d1c645aa18f02c": {},
+            "c4b66656b9c0fa6e": {},
+            "8c9acdd6e53b2b1c": {},
+            "4c17b406cc8b860b": {}
+          }
+        },
+        "016a8d44020815ae": {
+          "name": "03 • Le dernier fret de Shigure",
+          "tokens": {
+            "648aa420d08a4923": {
+              "name": "Masato Kurose • Palette"
+            },
+            "3cda859abfaf1e0d": {
+              "name": "Haru Watanabe • Captif"
+            },
+            "8d803e3c781551b8": {
+              "name": "Haru Watanabe • Captif"
+            },
+            "ce303a6bd1792dc2": {
+              "name": "Riku Inose • Homme de main de la clinique"
+            },
+            "867f2840b6e86668": {
+              "name": "Chika Fuse • Guetteuse de la gare de fret"
+            },
+            "582f0d60267a44cd": {
+              "name": "Aya Teshima"
+            },
+            "e36136cfa481fc40": {
+              "name": "Ren Kisaragi"
+            },
+            "69cae33637ba3d8d": {
+              "name": "Mio Naruse"
+            },
+            "fd3992372b259508": {
+              "name": "Daichi Ueno"
+            },
+            "bb7fbc98698942ca": {
+              "name": "Nao Fushimi"
+            },
+            "ea69f0de379f2905": {
+              "name": "Sora Amemiya"
+            }
+          },
+          "notes": {
+            "af1257c090dedc63": {
+              "text": "Bureau de chargement"
+            },
+            "9cc58b0f145aac77": {
+              "text": "Captifs"
+            },
+            "31da4a8c9c922f32": {
+              "text": "Passage de service sud"
+            }
+          },
+          "walls": {
+            "dd76c2d2152833d0": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Limite nord de la gare"
+                }
+              }
+            },
+            "ab1f8a5e0648ecda": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Limite du tunnel"
+                }
+              }
+            },
+            "10c17e8df9fc9c88": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Limite est de la gare"
+                }
+              }
+            },
+            "a55e4ea89842f457": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Mur de soutènement ouest"
+                }
+              }
+            },
+            "7e5a74abd97281bf": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Portail ouest de la gare"
+                }
+              }
+            },
+            "e26100ac63d05e5f": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Mur de soutènement ouest"
+                }
+              }
+            },
+            "36b4e0bb74dc0b00": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture sud de la cour"
+                }
+              }
+            },
+            "0f1b065efd66dbef": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture sud de la cour"
+                }
+              }
+            },
+            "20b9465564e8564a": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Clôture sud de la cour"
+                }
+              }
+            },
+            "14003a232f2f1257": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Conteneurs de fret"
+                }
+              }
+            },
+            "965681612be1cdaf": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Conteneurs de fret"
+                }
+              }
+            },
+            "516b73015a30a9f0": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Conteneurs de fret"
+                }
+              }
+            },
+            "87e7f1ab31888876": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Conteneurs de fret"
+                }
+              }
+            },
+            "f4a97c02c4fc1b8a": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison de la gare"
+                }
+              }
+            },
+            "fdf350884f939875": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison de la gare"
+                }
+              }
+            },
+            "da5cb49a6a56773d": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison de la gare"
+                }
+              }
+            },
+            "d2f449634888eead": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Fourgon de livraison de la gare"
+                }
+              }
+            },
+            "1d3ae5dd19bdc7f2": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Grillage de l’enclos des captifs"
+                }
+              }
+            },
+            "d8f536f5a5df022e": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Grillage de l’enclos des captifs"
+                }
+              }
+            },
+            "035f3f818af60e23": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Grillage de l’enclos des captifs"
+                }
+              }
+            },
+            "48011b709c66ae23": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Grillage de l’enclos des captifs"
+                }
+              }
+            },
+            "69119a72e87b07f1": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Portail de l’enclos des captifs"
+                }
+              }
+            },
+            "2accb42c744afee1": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Grillage de l’enclos des captifs"
+                }
+              }
+            },
+            "0aaa8b55a568618f": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bord du quai — utilisez les escaliers"
+                }
+              }
+            },
+            "4e6002a36d8cbd12": {
+              "flags": {
+                "tokyo-ghoul-unofficial": {
+                  "name": "Bord du quai — utilisez les escaliers"
+                }
+              }
+            }
+          },
+          "lights": {
+            "196c9acf4394cc05": {},
+            "c987a5bd0a4d026e": {},
+            "f01824fd4a3a1dc4": {},
+            "d231a18f5f93038c": {},
+            "5b91b89984391dca": {},
+            "865697847d7d6e43": {},
+            "a6cab2dd7d3d3238": {}
+          }
+        }
+      },
+      "folders": {
+        "874df816581951ac": {
+          "name": "Dernière Livraison • Personnages joueurs"
+        },
+        "e1134adae5cab728": {
+          "name": "Dernière Livraison • PNJ"
+        },
+        "a774041979abf6c5": {
+          "name": "Dernière Livraison • Arsenal et pièces à conviction"
+        },
+        "27988307f9195bd6": {
+          "name": "Dernière Livraison • Guide du MJ"
+        },
+        "68d1415520b75731": {
+          "name": "Dernière Livraison • Documents à partager"
+        },
+        "4236f423189c1e86": {
+          "name": "Dernière Livraison • Scènes"
+        }
+      },
+      "journal": {
+        "cec81ce76f255661": {
+          "name": "00 • MJ — Pour commencer",
+          "pages": {
+            "11b38792162eff29": {
+              "name": "00 • MJ — Pour commencer",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>La Dernière Livraison</h1><p><strong>4 à 6 joueurs · 4 à 5 heures · scénario original non officiel dans l’univers de Tokyo Ghoul.</strong> La pluie noie un petit quartier de Tokyo. Un fourgon mortuaire volé transporte la seule preuve qu’un fournisseur de nourriture pour goules s’est mis à tuer des vivants. Une livreuse terrifiée a donné rendez-vous à des inspecteurs et à des goules du quartier dans le même café. Aucun des deux camps ne sait que l’autre sera là.</p><h2>Importer et préparer la partie</h2><ol><li>Ouvrez le compendium d’aventure La Dernière Livraison, puis l’aventure, et choisissez « Tout importer ». Pour une partie indépendante, utilisez un nouveau monde. Une nouvelle importation met à jour les scènes et écrase l’état de l’aventure déjà importée : sauvegardez d’abord votre partie en cours.</li><li>Lisez @UUID[JournalEntry.ed896e8ae2396796]{01 • MJ — La vérité et les protagonistes}, puis @UUID[JournalEntry.f1cc4fb026b06c1d]{03 • Pluie sur Sazanami}, @UUID[JournalEntry.0638daf13a1d24da]{04 • Clinique d’Aobane} et @UUID[JournalEntry.f5e37f92aa4b0417]{05 • Le dernier fret de Shigure}. Chaque scène dispose de son journal et de repères cliquables pour le MJ.</li><li>Attribuez les quatre personnages principaux : @UUID[Actor.b3fc16e43dfb0cf4]{Aya Teshima}, @UUID[Actor.dcbf3bc4e6e3f452]{Ren Kisaragi}, @UUID[Actor.e265cdcde8fcd05d]{Mio Naruse} et @UUID[Actor.6f1d242fa0b3469f]{Daichi Ueno}. À cinq joueurs, ajoutez @UUID[Actor.d9d1cabae5a178c8]{Nao Fushimi} ; à six, @UUID[Actor.603f09339dce02cc]{Sora Amemiya}. Donnez à chaque joueur les droits de propriétaire sur son personnage. Présentez-lui son dossier en privé.</li><li>Les pions des six PJ sont déjà placés à l’entrée sud de chaque scène et liés à leurs personnages. Aya, Ren, Mio et Daichi sont visibles ; Nao et Sora sont masqués. Sur chaque scène, révélez Nao à cinq joueurs et Sora à six, ou supprimez les pions inutilisés. Les PNJ sont aussi en place ; les renforts commencent masqués.</li><li>Activez « 01 • Pluie sur Sazanami ». Partagez @UUID[JournalEntry.decfd5e2a3742b63]{Document • Un rendez-vous sous la pluie}. Gardez tous les autres journaux réservés au MJ tant que vous ne les avez pas explicitement partagés.</li></ol><p>Utilisez le mode Escouade pour tous les combats. Les scènes sont sans grille ; l’échelle de mesure est de 5 pieds pour 64 pixels. Murs, portes et portails fonctionnels, éclairages ambiants, vision des pions et exploration du brouillard sont configurés. Un faible éclairage global permet de circuler dehors, tandis que les murs limitent les lignes de vue. Les portes ordinaires s’ouvrent et se ferment avec leurs commandes habituelles ; la porte de service de la clinique et le portail des captifs sont verrouillés au départ. Le MJ les déverrouille lorsque les personnages utilisent la clé, le code ou réussissent l’action prévue par le récit. Les murs de déplacement au bord du quai laissent les escaliers accessibles ; le MJ peut autoriser une escalade en faisant passer un pion par-dessus le rebord. Portées, attaques, défenses, dégâts, régénération et consommables utilisent les procédures existantes du système. Le MJ arbitre les compteurs narratifs, la reddition des PNJ, les dangers, le partage des indices et les issues non mortelles.</p><h2>Rythme de la séance</h2><p>Accord sur les thèmes et présentations : 15 minutes ; ruelle et première décision : 45 minutes ; clinique : 60 minutes ; gare : 75 minutes ; épilogue : 20 minutes. Autorisez une manœuvre « Reprendre son souffle » entre deux lieux si la situation le permet. Si vous manquez de temps, sautez le combat de la clinique et laissez Yui livrer ses preuves au cours d’une conversation.</p><p>Avant de jouer, abordez l’horreur corporelle, la faim, la contrainte et la violence institutionnelle. Au besoin, passez sous silence les détails de la manipulation des corps et des opérations chirurgicales. Réussir ne demande jamais de s’en prendre à des civils. Aucun personnage du manga n’apparaît. La trêve avec le CCG est un arrangement officieux et désespéré entre individus, pas une politique de l’institution.</p><h2>Index</h2><p>@UUID[JournalEntry.ed896e8ae2396796]{01 • MJ — La vérité et les protagonistes} · @UUID[JournalEntry.6f265165d5891297]{02 • MJ — Rencontres et ajustements} · @UUID[JournalEntry.f1cc4fb026b06c1d]{03 • Pluie sur Sazanami} · @UUID[JournalEntry.0638daf13a1d24da]{04 • Clinique d’Aobane} · @UUID[JournalEntry.f5e37f92aa4b0417]{05 • Le dernier fret de Shigure} · @UUID[JournalEntry.4aa3af750aa11756]{06 • L’aube et ses conséquences} · @UUID[JournalEntry.decfd5e2a3742b63]{Document • Un rendez-vous sous la pluie} · @UUID[JournalEntry.5e7fd050ce91fd02]{Document • Transfert mortuaire AO-7} · @UUID[JournalEntry.1676ea2fa9c1325b]{Document • Le message non envoyé de Yui} · @UUID[JournalEntry.ef018e084b248b7d]{Document • Le double du registre} · @UUID[JournalEntry.73a9f6a8b5cbd561]{07 • Dossiers confidentiels des personnages}</p></article>"
+              }
+            }
+          }
+        },
+        "ed896e8ae2396796": {
+          "name": "01 • MJ — La vérité et les protagonistes",
+          "pages": {
+            "d5a3590fabfcd06e": {
+              "name": "01 • MJ — La vérité et les protagonistes",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Ce qui s’est réellement passé</h1><p>Le café Sazanami met discrètement des goules isolées en relation avec un réseau de vols de corps à la morgue, dont les livraisons sont assurées par Yui Matsuda, une conductrice humaine. Les corps appartiennent à des personnes déjà mortes. Cela ne rend pas les vols inoffensifs, mais a permis à ces goules de ne plus chasser. Masato Kurose, un intermédiaire surnommé « Palette », a récemment pris le contrôle du réseau. Pour combler les pénuries, il assassine des personnes vulnérables et fait passer leurs dépouilles pour des corps non réclamés transférés depuis la morgue.</p><p>Il y a trois nuits, Yui a découvert un patient vivant dans la clinique désaffectée d’Aobane. Elle a copié le registre et volé le fourgon prévu pour ce soir. Elle a demandé protection à Aya, son amie d’enfance humaine, et de l’aide au coursier goule Ren pour sauver les captifs. Le rendez-vous était fixé à Sazanami à 22 h 10. Kurose l’a interceptée, mais la caméra embarquée du fourgon et son téléphone caché sont restés intacts. Elle se trouve maintenant à la clinique ; deux personnes enlevées attendent leur transfert dans la gare de fret fermée de Shigure.</p><h2>Ce que veut chaque camp</h2><p><strong>Les PJ :</strong> retrouver la livreuse et empêcher le prochain meurtre. Les goules doivent aussi trouver comment survivre ensuite ; les inspecteurs ont besoin de preuves qu’ils pourront défendre.</p><p><strong>@UUID[Actor.1530b85c1ded8901]{Masato Kurose • Palette} :</strong> récupérer les originaux et partir avec les captifs. Il parle comme un responsable logistique : « Vous pouvez vous indigner, ou vous pouvez continuer à nourrir les vôtres. » Il redoute davantage de laisser des traces publiques que de mourir. C’est une goule expérimentée dotée d’un rinkaku, pas un adversaire doté d’un kakuja.</p><p><strong>@UUID[Actor.83bcc6b88a48e6b2]{Yui Matsuda • Livreuse disparue} :</strong> faire sortir les deux patients. Elle reconnaît ses propres vols si on lui promet de l’écouter équitablement. Nerveuse, elle compte les issues. « Je pensais que les morts pouvaient nourrir les vivants. Puis j’ai entendu quelqu’un respirer. »</p><p><strong>@UUID[Actor.8e05d06cad5d2f11]{Emi Hayase • Propriétaire du café} :</strong> propriétaire goule du Sazanami ; elle protège la rencontre et met à l’abri ceux qui n’y prennent pas part. Elle prépare du café, mais ne peut pas manger de nourriture humaine pour l’accompagner. Elle acceptera de livrer le réseau pour arrêter les meurtres, tout en demandant qui nourrira demain les goules qui en dépendent.</p><p><strong>@UUID[Actor.c9ed3f809b60fdf2]{Riku Inose • Homme de main de la clinique} :</strong> Riku Inose, l’homme de main de la clinique, craint Kurose et refuse de tuer des personnages qui se rendent. <strong>@UUID[Actor.bb3383b578af98c0]{Chika Fuse • Guetteuse de la gare de fret} :</strong> Chika Fuse, éclaireuse ukaku ; son frère est retenu en otage pour garantir son obéissance. <strong>@UUID[Actor.9990effb4cbad3b4]{Haru Watanabe • Captif} :</strong> Haru Watanabe, captif humain, est conscient, capable de marcher et terrifié. Si vous le souhaitez, dupliquez son pion pour représenter le second captif, qui n’est pas nommé. N’attribuez à aucun des deux un rôle de combattant.</p><h2>Chronologie</h2><p>22 h 10 : le rendez-vous est interrompu ; 22 h 35 : prochain enlèvement de cargaison ; 23 h 00 : créneau de fuite de Kurose. Ces horaires servent à rythmer le récit, pas à imposer des échéances en temps réel. Prévenez les joueurs lorsqu’un long détour risque de laisser partir le fourgon. Ne faites jamais disparaître un indice simplement parce qu’un jet a échoué.</p></article>"
+              }
+            }
+          }
+        },
+        "6f265165d5891297": {
+          "name": "02 • MJ — Rencontres et ajustements",
+          "pages": {
+            "555b743d0a10e469": {
+              "name": "02 • MJ — Rencontres et ajustements",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Un scénario dont on peut sortir vivant</h1><p>Les prétirés suivent les règles de création existantes : 60 points, niveau RC des armes adapté à la classe et conversion des emplacements d’atouts inutilisés. Leurs armes de départ n’ont volontairement aucun atout facultatif : moins d’effets à gérer pour les débutants, et un niveau RC plus élevé. Toutes les ressources commencent à leur maximum calculé. La régénération des goules et les modificateurs de type s’appliquent normalement. Les valeurs des PNJ sont des profils propres au scénario, pas des modèles de création de PJ.</p><table><thead><tr><th>Joueurs</th><th>Ruelle</th><th>Clinique</th><th>Gare</th></tr></thead><tbody><tr><td>4</td><td>Chika seule ; elle se replie à la première blessure</td><td>Riku seul, ou convaincu de renoncer</td><td>Kurose seul ; Chika reste neutre</td></tr><tr><td>5</td><td>Chika seule</td><td>Riku + Chika, renfort masqué révélé uniquement si l’alarme est donnée</td><td>Kurose + Riku si Riku s’est échappé</td></tr><tr><td>6</td><td>Chika + Riku, masqué jusqu’à son arrivée au round 2</td><td>Riku + Chika, sauf si elle a rejoint le groupe</td><td>Kurose + Riku + Chika uniquement si tous deux lui restent fidèles</td></tr></tbody></table><p>Ne révélez que les pions prévus par ce tableau. Un PNJ rallié, capturé ou hors de combat ne réapparaît pas comme ennemi. Déplacez ou supprimez son pion dans les scènes suivantes. Les copies des ennemis ne sont pas liées à leur personnage : les blessures d’une scène ne se reportent donc pas automatiquement. Reportez manuellement les blessures et les ressources dépensées, ou faites glisser le pion d’origine dans la scène suivante. Ne remettez pas à neuf un adversaire qui s’est enfui.</p><p>Kurose commence avec 96 points de vitalité, 84 points d’endurance et un rinkaku de niveau RC 22. Il se rend à 24 points de vitalité si la sortie est bloquée, ou négocie si le registre original a été récupéré et copié. Il privilégie sa fuite et les preuves plutôt que les dégâts maximaux. Dirigez chaque attaque contre un combattant encore actif, jamais contre un PJ inconscient ; appliquez les défenses et réactions habituelles. Les hommes de main se rendent après avoir perdu la moitié de leur vitalité, ou lorsque le chantage de Kurose est révélé.</p><p>Si le groupe peine, retirez les renforts, autorisez une pause pour reprendre son souffle avant la gare et faites indiquer la sortie de service par Chika. Pour des joueurs expérimentés, gardez les ennemis du tableau et répartissez-les entre plusieurs objectifs. N’ajoutez ni tours supplémentaires inexpliqués, ni immunités, ni transformations en kakuja. Ces rencontres s’adaptent à la taille du groupe, mais leur équilibre n’a pas été testé en partie.</p><h2>Compteur de pression narrative (MJ)</h2><p>Commencez à 0. Augmentez le compteur d’un cran après un combat bruyant en public, l’abandon d’un témoin ou un retard prolongé dont vous avez explicitement annoncé le risque. À 1, la gare est alertée ; à 2, Chika garde la rampe de chargement ; à 3, Kurose range le registre dans son manteau et commence à embarquer les patients. Le groupe arrive toujours avant le départ du fourgon. Signalez chaque aggravation par des bruits, des messages ou des mouvements visibles.</p><h2>Jets</h2><p>Utilisez les jets habituels de d20 + caractéristique, avec la gestion des critiques et des échecs critiques du système. Fixez le seuil à 18 pour une tâche ordinaire sous pression, à 23 pour une tâche difficile. Ces seuils et les temps nécessaires sont des arbitrages propres au scénario, pas de nouvelles règles générales. Les indices évidents ne demandent aucun jet ; les jets permettent d’aller plus vite, d’obtenir des détails ou d’agir plus sûrement. Un échec ne fait avancer la pression que d’un cran, et seulement si une conséquence significative a été annoncée. Il doit toujours laisser une piste pour continuer.</p></article>"
+              }
+            }
+          }
+        },
+        "f1cc4fb026b06c1d": {
+          "name": "03 • Pluie sur Sazanami",
+          "pages": {
+            "dc888fd632991f6f": {
+              "name": "03 • Pluie sur Sazanami",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Scène 1 : le rendez-vous interrompu</h1><p>@UUID[Scene.6e10d0826e112f4a]{Pluie sur Sazanami} · @UUID[Actor.8e05d06cad5d2f11]{Emi Hayase • Propriétaire du café} · @UUID[Actor.bb3383b578af98c0]{Chika Fuse • Guetteuse de la gare de fret}</p><blockquote>Le dernier train gronde au-dessus de la pluie. Un fourgon frigorifique barre l’étroite ruelle, les portes grandes ouvertes. Dans le café, une tasse intacte a refroidi. Le téléphone de votre contact vibre sous une chaise. Sur le toit de l’aire de chargement, quelqu’un vous observe sans ciller.</blockquote><h2>Commencer par une trêve</h2><p>Laissez chaque joueur se présenter : pourquoi Yui lui fait-elle confiance ? Emi insiste : si la rencontre tourne au combat, Yui mourra. Aya peut proposer une protection temporaire en tant que témoin ; Ren peut promettre qu’aucune goule ne chassera pendant l’opération. Demandez à chaque personnage une concession concrète. Le scénario suppose que les joueurs acceptent de coopérer ; faites vivre la méfiance à travers les promesses et les preuves.</p><h2>Lieux et indices</h2><p><strong>Le café, au nord-ouest :</strong> Emi a @UUID[JournalEntry.1676ea2fa9c1325b]{Document • Le message non envoyé de Yui}, sous la tasse de Yui. L’écran fêlé du téléphone affiche « AO-7 / SHIGURE / 23:00 ». <strong>Le fourgon, au milieu de la ruelle :</strong> @UUID[JournalEntry.5e7fd050ce91fd02]{Document • Transfert mortuaire AO-7} se trouve dans la boîte à gants. La boue froide sur les pédales contient des éclats du verre bleu de la clinique. La caméra embarquée montre Riku traînant Yui dans une voiture grise ; la destination du GPS est la clinique d’Aobane. <strong>L’aire de chargement, au nord-est :</strong> Chika se cache derrière les palettes, pas dans le café. Elle prévient que la livraison a été volée.</p><p>Le téléphone, la caméra embarquée ou la connaissance du réseau d’Emi suffisent, chacun à eux seuls, à mener à la clinique. Un jet de PER au seuil de 18 permet de récupérer immédiatement l’enregistrement complet. En cas d’échec, les PJ obtiennent la destination, mais Emi devra copier les images pendant la scène suivante. Un jet de CTR au seuil de 18, ou une promesse sincère de sauver le frère de Chika, la convainc de décrire le passage de service de la gare.</p><h2>Rencontre</h2><p>Chika veut le téléphone, pas un massacre. Elle propose d’abord un échange. Si on l’attaque ou lui barre la route, elle déploie Pluie de plumes, effectue une attaque à distance dans un axe dégagé de la ruelle, puis tente de fuir vers le nord. Laissez les personnages esquiver, parer ou encaisser selon les invites habituelles du système. Révélez le pion masqué de Riku au round 2 uniquement à six joueurs. Les ennemis n’attaquent pas à travers les murs des bâtiments.</p><h2>Terrain</h2><p>Le fourgon et les poubelles fournissent un couvert lorsqu’ils coupent réellement une ligne d’attaque ; le MJ juge la visibilité. Les tables du café ralentissent les déplacements selon la situation, sans imposer de modificateur automatique. Néons, pluie et chaussée mouillée créent l’ambiance sans pénalités de combat arbitraires. Les joueurs peuvent sauver la conductrice à la clinique sans gagner ce combat.</p><h2>Transition</h2><p>Emi ouvre la porte arrière, remet à chaque inspecteur la trousse déjà présente sur sa fiche et trouve quelqu’un pour les conduire. Expliquez aux goules qu’elles ne risquent pas immédiatement de mourir de faim : leur réserve alimentaire est pleine au départ et l’histoire ne dure que quelques heures. Passez à @UUID[Scene.c26515ce9312f9bb]{Clinique d’Aobane}. Montrez séparément les deux documents récupérés, sans révéler les pages du MJ.</p></article>"
+              }
+            }
+          }
+        },
+        "0638daf13a1d24da": {
+          "name": "04 • Clinique d’Aobane",
+          "pages": {
+            "f1725a66008cca6a": {
+              "name": "04 • Clinique d’Aobane",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Scène 2 : derrière les livraisons, un crime</h1><p>@UUID[Scene.c26515ce9312f9bb]{Clinique d’Aobane} · @UUID[Actor.83bcc6b88a48e6b2]{Yui Matsuda • Livreuse disparue} · @UUID[Actor.c9ed3f809b60fdf2]{Riku Inose • Homme de main de la clinique}</p><blockquote>Le volet de la clinique tremble dans le vent. Derrière, des tubes fluorescents éclairent un comptoir d’accueil désert. Une chambre froide ronronne derrière une vitre épaisse. Une voix humaine s’élève de la salle de soins : elle demande si ce sont vos pas qu’elle entend.</blockquote><h2>Entrer</h2><p>L’accueil principal n’est pas verrouillé. L’entrée de service latérale s’ouvre avec la clé trouvée dans le fourgon, un jet de FOR au seuil de 18 ou cinq minutes de travail minutieux. Prévenez qu’une effraction prolongée pourrait alerter Riku. Un jet de PER au seuil de 18 permet de repérer le passage arrière sans traverser l’accueil.</p><h2>Zones à explorer</h2><p><strong>Accueil, au nord-ouest :</strong> un planning indique SHIGURE — 23:00 ; l’adresse de la gare figure sur les étiquettes d’expédition. <strong>Salle de soins, au nord-est :</strong> Yui est attachée à une chaise, consciente. La libérer demande une interaction ordinaire, aucun jet d’attaque. Elle a vu deux patients emmenés à la gare et peut décrire Kurose. <strong>Chambre froide, au sud-ouest :</strong> des housses mortuaires vides et des étiquettes falsifiées révèlent la substitution ; évitez les descriptions crues. <strong>Bureau, au sud-est :</strong> @UUID[JournalEntry.ef018e084b248b7d]{Document • Le double du registre} est une photocopie cachée sous l’imprimante. Les originaux et l’identité des victimes sont à la gare.</p><p>Le témoignage de Yui, les étiquettes d’expédition et le registre révèlent chacun, indépendamment, l’emplacement de la gare. Un jet de PER au seuil de 23 prouve en outre que plusieurs prétendus donneurs décédés étaient vivants lors de leur « collecte ». En cas d’échec, les preuves suffisent tout de même à poursuivre le sauvetage, et Yui explique l’incohérence.</p><h2>Le choix de Riku</h2><p>Riku garde le couloir parce que Kurose menace ses proches. Il accepte une promesse de les évacuer accompagnée des preuves de la caméra embarquée. Aucun jet n’est nécessaire si les deux sont proposés de façon crédible. Sinon, un jet de CTR au seuil de 23 permet de le retenir assez longtemps pour libérer Yui. Un échec déclenche un combat, pas la mort de Yui. Riku utilise Sillage de fer au corps à corps et s’interpose entre le groupe et le bureau. N’ajoutez Chika que si @UUID[JournalEntry.6f265165d5891297]{02 • MJ — Rencontres et ajustements} le prévoit ; la preuve que Haru est encore vivant peut la rallier au groupe.</p><h2>Alarme et fuite</h2><p>Une interaction suffit à couper l’alarme du bureau grâce à son interrupteur apparent. La laisser sonner fait avancer la pression d’un cran. C’est un objectif narratif, pas une nouvelle manœuvre de combat automatique. Si un combat est en cours, le MJ applique les coûts habituels des interactions. Aucun gaz corrosif ni dégât instantané caché ne se déclenche.</p><h2>Se remettre et repartir</h2><p>Yui peut accompagner les PJ ou être reconduite auprès d’Emi ; décidez-en ouvertement. Laissez les personnages soignants utiliser leurs trousses habituelles. Accordez une pause pour reprendre son souffle si le temps le permet, et expliquez le risque avant tout détour facultatif. Yui donne le code du portail de la gare : 0417. Passez à @UUID[Scene.016a8d44020815ae]{Le dernier fret de Shigure}.</p></article>"
+              }
+            }
+          }
+        },
+        "f5e37f92aa4b0417": {
+          "name": "05 • Le dernier fret de Shigure",
+          "pages": {
+            "47f65690bd46a090": {
+              "name": "05 • Le dernier fret de Shigure",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Scène 3 : les gens ne sont pas des marchandises</h1><p>@UUID[Scene.016a8d44020815ae]{Le dernier fret de Shigure} · @UUID[Actor.1530b85c1ded8901]{Masato Kurose • Palette} · @UUID[Actor.9990effb4cbad3b4]{Haru Watanabe • Captif}</p><blockquote>Deux rails disparaissent dans un tunnel noir. Des projecteurs dessinent des rectangles pâles sur le quai de fret. Un homme à l’imperméable impeccable vérifie un registre à côté d’un fourgon. Derrière le grillage fermé par une chaîne, deux personnes bien vivantes attendent avec des bagages qu’elles n’ont pas préparés.</blockquote><h2>Approches</h2><p>L’entrée ouest mène au quai de chargement. Le passage de service au sud mène aux captifs ; Chika ou Yui peut l’indiquer. On accède aux voies par des escaliers, et aucun train n’y circule. Laissez le groupe voir Kurose, les deux patients et le fourgon avant de lancer l’initiative ; n’imposez pas d’embuscade.</p><h2>Trois objectifs</h2><ol><li><strong>Libérer les captifs :</strong> ouvrez la cage avec le code de Yui, utilisez le loquet côté quai ou forcez-le avec un jet de FOR au seuil de 23. Un échec tord le loquet et permet une seconde tentative ; ne blessez pas les patients. Escortez-les vers la sortie ouest ou sud.</li><li><strong>Récupérer les originaux :</strong> le registre est posé sur le bureau de chargement, ou dans le manteau de Kurose à la pression 3. Obtenez-le par négociation, diversion, vol avec un jet de caractéristique adapté, ou en vainquant son détenteur. Une photo suffit à conserver une preuve ; saisir le document reste préférable.</li><li><strong>Empêcher le départ de Kurose :</strong> prenez ses clés, bloquez le fourgon ou convainquez Chika de refuser de conduire. Il faut un accès physique ou une concession négociée plausible, pas une attaque contre une fiche de véhicule.</li></ol><h2>Négociation</h2><p>Kurose offre à chaque goule un approvisionnement stable, et à chaque inspecteur une arrestation en apparence facile : faire de Yui l’unique coupable. Sa menace est crédible, mais son offre est mensongère ; le registre donne les noms de ses victimes. Il libérera les captifs en échange d’un passage sûr si le groupe possède des copies des preuves. Un jet convaincant de CTR au seuil de 23 le fait taire assez longtemps pour accomplir un objectif ; un moyen de pression évident fonctionne sans jet. N’exigez pas de jet pour faire respecter un accord solide.</p><h2>Combat</h2><p>Suivez @UUID[JournalEntry.6f265165d5891297]{02 • MJ — Rencontres et ajustements}. Kurose déploie Registre rouge, agrippe ou frappe avec les manœuvres habituelles, et se dirige vers son fourgon lorsqu’il perd les originaux. Il ne se transforme pas en kakuja, ne dispose d’aucune action supplémentaire de boss et n’est pas immunisé aux états habituels. À 24 points de vitalité, il propose de se rendre si la fuite est impossible ; sinon, il s’enfuit. Les PJ peuvent maîtriser un adversaire qui s’est rendu sans jet de dégâts. Le MJ décide quand une défaite n’est pas mortelle ; l’automatisation habituelle des dégâts continue de s’appliquer.</p><h2>Un terrain lisible</h2><p>Les caisses du quai bloquent les lignes de vue uniquement là où le dessin les représente. Pour passer des voies au quai, utilisez les escaliers visibles ou une escalade autorisée par le MJ. Le tunnel sombre est une voie de fuite, pas un gouffre sans fond. Le fourgon reste immobile tant que le groupe n’a pas eu au moins trois rounds complets, ou autant d’échanges de négociation, pour intervenir. Annoncez chaque étape qui rapproche du départ. Ne tuez pas les patients à l’expiration d’un compte à rebours.</p><h2>Après le sauvetage</h2><p>Une fois les patients en sécurité, demandez qui reçoit le registre, si Yui est arrêtée et ce que deviennent les goules qui dépendent du réseau. Consultez @UUID[JournalEntry.4aa3af750aa11756]{06 • L’aube et ses conséquences}. Les objets @UUID[Item.56a5a2e57669416c]{Registre original de Kurose} et @UUID[Item.aa39bb9dac759635]{Clés de service de Shigure}, une fois récupérés, peuvent être glissés sur les fiches comme pièces à conviction ; aucun ne donne de bonus au combat.</p></article>"
+              }
+            }
+          }
+        },
+        "4aa3af750aa11756": {
+          "name": "06 • L’aube et ses conséquences",
+          "pages": {
+            "d93cdaefb6af2449": {
+              "name": "06 • L’aube et ses conséquences",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Tenir trois promesses</h1><p><strong>Le sauvetage :</strong> Haru et le second captif rejoignent une ambulance sous les identités choisies par les joueurs. Si Kurose s’échappe, leurs témoignages et les copies pourront encore étayer une future enquête. Si les joueurs n’atteignent pas la cage avant qu’il commence à la déplacer, proposez une poursuite ou un échange. Perdre un combat n’oblige pas à jouer une scène d’exécution.</p><p><strong>La justice :</strong> Aya peut remettre les documents originaux tout en gardant secret l’endroit où se trouvent les témoins ; Daichi peut insister sur la traçabilité des pièces à conviction. Yui reconnaît les vols de corps et risque des poursuites, même si elle bénéficie d’une protection en tant que témoin. N’annoncez pas une réforme automatique du CCG. Si le registre est détruit, Yui, les patients et la caméra embarquée restent trois sources indépendantes.</p><p><strong>La faim :</strong> fermer le réseau met en danger les goules qui dépendent d’Emi. Proposez un plan d’évacuation et d’entraide à court terme, pas une nourriture humaine devenue miraculeusement comestible ni un approvisionnement sans dilemme éthique. Ren peut conserver les réserves volées restantes tout en démantelant l’organisation de Kurose. Ce choix a des conséquences pour les familles des victimes et auprès des institutions.</p><h2>Fins possibles</h2><p><strong>Une aube difficile :</strong> les patients sont sauvés, les originaux préservés, Kurose arrêté. Les personnages maintiennent leur trêve en privé. <strong>Un mensonge bien propre :</strong> le sauvetage réussit, mais les preuves sont étouffées ; le CCG présente une version simplifiée, et les personnages en connaissent le prix. <strong>Le prix de l’intermédiaire :</strong> Kurose obtient le passage en échange des patients ; son réseau s’effondre, mais une autre nuit pourrait le voir revenir. <strong>Plus aucune livraison :</strong> le groupe révèle tout publiquement, forçant le réseau d’Emi à fuir.</p><p>Posez à chaque joueur une dernière question : qui vous doit sa confiance ? Que mangerez-vous demain ? Quelle vérité avez-vous gardée pour vous ? Pour poursuivre, utilisez les règles normales de progression et d’amélioration ; n’accordez ni hausse de rang automatique, ni récompense pour cannibalisme, ni accès gratuit au kakuja. Un scénario autonome n’a pas besoin de récompense mécanique.</p></article>"
+              }
+            }
+          }
+        },
+        "decfd5e2a3742b63": {
+          "name": "Document • Un rendez-vous sous la pluie",
+          "pages": {
+            "965d8a268282dd80": {
+              "name": "Document • Un rendez-vous sous la pluie",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Un rendez-vous sous la pluie</h1><p>22 h 10. Café Sazanami, dans une rue tranquille près d’une ancienne ligne de fret fermée. Une livreuse nommée Yui Matsuda vous a demandé de l’aide. Son message est bref :</p><blockquote>J’ai trouvé quelqu’un là où il n’aurait dû y avoir qu’un corps. Venez ce soir. J’ai aussi appelé quelqu’un de l’autre camp. S’il vous plaît, écoutez avant de sortir vos armes.</blockquote><p>Vous avez tous une raison de faire confiance à Yui, ou de vouloir la retrouver vivante. Aucun de vous n’a d’autorisation officielle pour collaborer. Décidez quelle promesse rend cette coopération possible. Autour de vous, la ville continue de tourner : les trains, les supérettes, les gens qui rentrent chez eux. Les tenir à l’écart de cette affaire compte.</p></article>"
+              }
+            }
+          }
+        },
+        "5e7fd050ce91fd02": {
+          "name": "Document • Transfert mortuaire AO-7",
+          "pages": {
+            "ed3c1943b91d0b2c": {
+              "name": "Document • Transfert mortuaire AO-7",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Transfert AO-7</h1><p>Véhicule : fourgon léger frigorifique. Enlèvement : annexe de la clinique d’Aobane. Destination : gare de fret de Shigure, portail ouest. Départ : 23 h 00. Conductrice : Y. Matsuda.</p><p>Trois transferts portent le même numéro d’autorisation. Sur une ligne, « admission d’un patient » a été remplacé par « dépouille non réclamée », avec une autre encre. L’étiquette de la clé de service indique AOBANE. Sous le tampon, une consigne manuscrite précise : « Aucun scanner. Aucun passage au service municipal de réception. Rendre les originaux à M.K. »</p><p>Ce document établit un itinéraire et une modification suspecte. À lui seul, il ne prouve pas qui a tué qui que ce soit.</p></article>"
+              }
+            }
+          }
+        },
+        "1676ea2fa9c1325b": {
+          "name": "Document • Le message non envoyé de Yui",
+          "pages": {
+            "e11c3aa21b13191d": {
+              "name": "Document • Le message non envoyé de Yui",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Brouillon récupéré, 21 h 48</h1><blockquote>Ren, je ne peux plus faire cette tournée. Il y a des gens vivants à Aobane. J’ai copié les numéros, mais Kurose a les noms. J’ai prévenu Aya parce qu’il me faut un témoin qui puisse procéder à une arrestation. Si je n’arrive pas au café, regardez dans l’imprimante du bureau. S’il te plaît, ne laisse pas ça devenir une guerre entre humains et goules. C’est exactement ce qu’il veut.</blockquote><p>La dernière image jointe montre une armoire à médicaments en verre bleu, reflétée dans une porte métallique. Les données de localisation pointent vers la clinique d’Aobane.</p></article>"
+              }
+            }
+          }
+        },
+        "ef018e084b248b7d": {
+          "name": "Document • Le double du registre",
+          "pages": {
+            "c6e1321dbda381b8": {
+              "name": "Document • Le double du registre",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Copie du bureau</h1><table><tr><th>Code</th><th>Admission</th><th>Transfert consigné</th></tr><tr><td>HW-14</td><td>Capable de marcher ; sédation ensuite</td><td>Donneur décédé ; aucun certificat</td></tr><tr><td>NK-09</td><td>Conscient ; effets personnels conservés</td><td>Donneur décédé ; aucun certificat</td></tr><tr><td>AO-7</td><td>Préparation pour le fret</td><td>Shigure ; 23 h 00 ; signature M.K.</td></tr></table><p>Une note en marge indique : « Les identités d’origine voyagent avec le responsable. Code d’accès aux patients : 0417. » Au dos : « Chika : membre de la famille retenu en garantie jusqu’au départ effectif. » Les originaux pourraient identifier les victimes et les relier à Kurose. Conservez cette copie.</p></article>"
+              }
+            }
+          }
+        },
+        "73a9f6a8b5cbd561": {
+          "name": "07 • Dossiers confidentiels des personnages",
+          "pages": {
+            "3744b361b7d3c7f7": {
+              "name": "07 • Dossiers confidentiels des personnages",
+              "text": {
+                "content": "<article class=\"tg-system tg-adventure\"><h1>Ne partagez chaque section qu’avec le joueur concerné</h1><h2>Aya Teshima · inspectrice</h2><p>Yui était votre voisine avant votre entrée au CCG. Vous pensez que les preuves doivent survivre à ceux qui les manipulent. Vous portez Signal neuf, un quinque ukaku. Lien : Daichi vous a appris à ne jamais déposer un rapport que vous refuseriez de signer. Secret : vous avez prévenu Yui avant d’appeler votre supérieur ; votre carrière dépend de la retrouver vivante. Objectif : la sauver et récupérer les originaux. Réplique : « Donnez-moi quelque chose que je puisse prouver. »</p><h2>Ren Kisaragi · coursier goule</h2><p>Vous transportez du café le jour et des colis mortuaires la nuit. Votre bikaku se nomme Lacet. Lien : Mio a un jour recousu votre manteau sans accepter d’argent ; Emi vous a donné du travail. Secret : votre dernière livraison contenait déjà une victime vivante, et vous avez détourné les yeux de l’étiquette suspecte. Objectif : avouer assez pour aider et maintenir en vie ceux qui dépendent du réseau. Réplique : « Derrière chaque numéro, il y a un nom. »</p><h2>Mio Naruse · goule, spécialiste des réparations</h2><p>Vous réparez des distributeurs automatiques et abritez les gens que personne ne remarque. Votre koukaku, Abri de pluie, ressemble à un auvent sombre replié. Lien : Ren apporte les provisions ; Aya vous a un jour laissé partir après un interrogatoire. Secret : Kurose a proposé de nourrir le jeune que vous avez recueilli si vous lui révélez les clients d’Emi. Vous avez refusé, mais il connaît votre adresse. Objectif : protéger les captifs et dévoiler son chantage. Réplique : « Restez derrière moi tant qu’on n’en sait pas plus. »</p><h2>Daichi Ueno · inspecteur</h2><p>Vous êtes un responsable d’enquête prudent, armé de Gardien du pont, un quinque koukaku. Lien : Aya est votre cadette et vous en êtes responsable. Secret : votre supérieur veut l’arrestation facile d’une goule, pas une enquête compliquée sur un réseau d’approvisionnement. Objectif : obtenir des preuves recevables et ramener tout le monde. Réplique : « On décidera du nom à donner à tout ça quand ils seront en sécurité. »</p><h2>Nao Fushimi · Quinx de liaison (cinquième joueur)</h2><p>Vous vivez avec des organes de goule implantés, tout en mangeant encore de la nourriture humaine ; ne jouez pas la faim d’une goule à part entière. Vous portez le quinque bikaku Ligne silencieuse et un kagune rinkaku nommé Suture. Lien : Daichi prend de vos nouvelles comme d’une personne, pas d’une expérience. Secret : vous craignez que la moindre perte de contrôle serve de prétexte pour mettre fin à la trêve. Objectif : faire preuve de retenue et protéger les témoins. Réplique : « Dites-moi ce que vous avez besoin que je retienne. »</p><h2>Sora Amemiya · goule, photographe de nuit (sixième joueur)</h2><p>Vous photographiez les rues mouillées parce que la ville paraît plus douce sans les visages. Votre ukaku se nomme Poids plume. Lien : Yui a transporté une pellicule qui a révélé un précédent enlèvement. Secret : vous avez déjà envoyé une image floue à un journaliste, sans nommer le café. Objectif : sauver les personnes photographiées avant de décider quoi publier. Réplique : « Une photo, ce n’est pas toute la vérité. »</p><p>Ces six personnages sont originaux. Le groupe de base comprend deux inspecteurs et deux goules. Ajoutez Nao, puis Sora, pour les groupes plus nombreux. Les dossiers donnent des motivations ; ils n’imposent jamais de trahison ni de conflit entre PJ.</p></article>"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

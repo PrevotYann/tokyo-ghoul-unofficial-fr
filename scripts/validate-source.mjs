@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import assert from "node:assert/strict";
+import {buildAdventureTranslation} from "./adventure-translations.mjs";
 const source = process.env.TG_SYSTEM_PATH ?? "../tokyo-ghoul-unofficial-foundry";
 const read = async file => JSON.parse(await fs.readFile(file, "utf8"));
 const english = await read(path.join(source, "lang/en.json"));
@@ -35,6 +36,10 @@ for (const file of await fs.readdir(path.join(source, "babele/en"))) {
     assert.equal(translated.folders[key], content[value], `Folder: ${file}.${key}`);
   }
   for (const [id, entry] of Object.entries(original.entries)) {
+    if (typeof entry === "string") {
+      assert.equal(translated.entries[id], content[entry], `Folder: ${file}.${id}`);
+      continue;
+    }
     assert.deepEqual(Object.keys(translated.entries[id]), Object.keys(entry), `Narrative fields: ${file}.${id}`);
     for (const [field, value] of Object.entries(entry)) {
       assert.equal(translated.entries[id][field], value ? content[value] : value, `Translation: ${file}.${id}.${field}`);
@@ -42,4 +47,5 @@ for (const file of await fs.readdir(path.join(source, "babele/en"))) {
   }
   packs++;
 }
-console.log(`${Object.keys(english).length} interface keys, ${records} records and ${packs} Babele files covered; placeholders, IDs and mappings preserved.`);
+assert.deepEqual(await read("compendium/fr/tokyo-ghoul-unofficial.last-delivery.json"), await buildAdventureTranslation(source), "Complete adventure translation matches authoring source");
+console.log(`${Object.keys(english).length} interface keys, ${records} rule records, ${packs + 1} Babele files and the complete adventure covered; placeholders, IDs and mappings preserved.`);

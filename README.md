@@ -18,7 +18,9 @@ La release fournit également `manifest.json`, identique à `module.json`. Pour 
 
 ## Contenu
 
-Le module traduit les 336 entrées de l’interface du système : fiches, création de personnage, jets, combat, progression, fabrication, notifications et paramètres. Babele traduit les 83 entrées des six compendiums existants : noms, descriptions, notes et effets personnalisés, ainsi que les titres des compendiums et leurs dossiers. Aucun compendium en double n’est créé.
+Le module traduit les 337 entrées de l’interface du système : fiches, création de personnage, jets, combat, progression, fabrication, notifications et paramètres. Babele traduit les 83 entrées des six compendiums de règles et d’équipement : noms, descriptions, notes et effets personnalisés, ainsi que les titres des compendiums et leurs dossiers. Aucun compendium en double n’est créé.
+
+L’aventure **La Dernière Livraison**, disponible avec le système **0.4.1**, est intégralement traduite : douze journaux (guide du MJ, scènes, épilogue, dossiers confidentiels et documents pour les joueurs), six personnages joueurs, six PNJ, quinze objets, trois scènes, leurs pions et dix repères. Les dialogues et textes à lire préservent le rythme du scénario et ses dilemmes. Ouvrez **Tokyo Ghoul — Aventures → La Dernière Livraison • Scénario en une séance**, importez tout le contenu, puis lisez **00 • MJ — Pour commencer**. Prévoyez quatre à six joueurs et quatre à cinq heures. L’import conserve les liens, les caractéristiques et les permissions privées. Une nouvelle importation peut écraser une partie en cours : sauvegardez-la auparavant.
 
 Les termes de l’univers sont conservés : kagune, quinque, kakuhou, kakuja, Quinx et cellules RC. Les enquêteurs du CCG sont désignés comme **inspecteurs**. « Edge » devient **atout** et « Gimmick » devient **capacité spéciale**. Les distances restent en pieds pour respecter les calculs du système.
 
@@ -42,7 +44,7 @@ npm run test:foundry
 npm run release:package
 ```
 
-`npm run build:translations` reprend les identifiants et mappings des modèles anglais dans `babele/en/` du système et les traduit avec `lang/content-fr.json`. Il refuse les valeurs sans traduction. `npm run validate:source` vérifie aussi les fichiers Babele, les dossiers, les identifiants et les mappings.
+`npm run build:translations` reprend les identifiants et mappings des modèles anglais dans `babele/en/` du système et les traduit avec `lang/content-fr.json`. Il construit aussi la traduction de l’aventure à partir de ses sources et de `lang/last-delivery-fr.mjs`. Il refuse les valeurs sans traduction et les références narratives modifiées. `npm run validate:source` vérifie aussi les fichiers Babele, les dossiers, les identifiants, les mappings et la couverture complète de l’aventure. Les tests Foundry vérifient l’import natif en français, puis suppriment leurs documents de test ; ils refusent d’écraser une aventure déjà importée.
 
 Les tests Foundry nécessitent un serveur v14.368 sur `http://localhost:30014`, un monde jetable `tg-qa`, un utilisateur `Gamemaster` sans mot de passe et le système, ce module, Babele et libWrapper installés. `TG_QA_URL` permet de modifier l’URL. Ils activent les modules dans le monde QA et configurent le navigateur en français. Ils refusent de modifier tout autre monde. Les rapports et captures sont placés dans `artifacts/`, exclu du dépôt.
 

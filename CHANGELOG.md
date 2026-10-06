@@ -1,5 +1,13 @@
 # Historique
 
+## 1.2.0 — 6 octobre 2026
+
+- Traduction intégrale de **La Dernière Livraison**, le scénario en une séance du système 0.4.1 : douze journaux, six PJ, six PNJ, quinze objets, trois scènes et dix repères.
+- Guide du MJ, dialogues à lire, dossiers confidentiels, documents à remettre aux joueurs, biographies, armes, pions et dossiers en français naturel ; termes propres à Tokyo Ghoul conservés.
+- Import natif de l’aventure en français avec préservation des identifiants, liens, caractéristiques, ressources, géométrie et permissions.
+- Traduction du groupe « Aventures », format des dossiers Babele corrigé et ajout du libellé « Modifier le texte ».
+- Vérification de couverture de l’aventure et tests de conservation des données et des références.
+
 ## 1.1.0 — 6 octobre 2026
 
 - Compatibilité avec le système 0.3.0 et son intégration Babele (2.8.0 minimum).

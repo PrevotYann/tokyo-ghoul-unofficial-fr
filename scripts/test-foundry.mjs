@@ -34,7 +34,7 @@ try {
     const checks = [];
     const assert = (value, name) => {if (!value) throw new Error(name); checks.push(name);};
     assert(game.version === "14.368", "Foundry 14.368");
-    assert(game.system.version === "0.3.0", "system 0.3.0");
+    assert(foundry.utils.isNewerVersion(game.system.version, "0.3.0") || game.system.version === "0.3.0", "compatible system");
     assert(game.modules.get("babele").active, "Babele active");
     assert(game.i18n.localize("TG.edges.sharpened") === "Tranchant", "French rule ID label");
     assert(!game.settings.get("babele", "showOriginalName"), "original-name preference disabled");
@@ -45,6 +45,63 @@ try {
       assert(pack.metadata.label === translation.label, `${pack.collection}: French pack title`);
       await pack.getIndex();
       const documents = await pack.getDocuments();
+      if (pack.documentName === "Adventure") {
+        const adventure = documents[0];
+        const entry = translation.entries[adventure.id];
+        assert(documents.length === 1 && adventure.name === entry.name, "French adventure title");
+        const check = (data, patch, location) => {
+          if (Array.isArray(data)) {
+            for (const [id, value] of Object.entries(patch)) check(data.find(document => document._id === id), value, `${location}.${id}`);
+          } else if (patch && typeof patch === "object") {
+            assert(data, `${location}: exists`);
+            for (const [key, value] of Object.entries(patch)) check(data[key], value, `${location}.${key}`);
+          } else {
+            // Foundry sanitizes imported journal HTML (attribute ordering,
+            // table bodies, whitespace). Compare its normalized DOM content.
+            const normalize = value => {
+              if (typeof value !== "string" || !value.includes("<")) return value;
+              const template = document.createElement("template");
+              template.innerHTML = value;
+              return template.content.textContent.replace(/\s+/g, " ").trim();
+            };
+            assert(normalize(data) === normalize(patch), `${location}: French text`);
+          }
+        };
+        check(adventure.toObject(), entry, "adventure");
+        assert(pack.index.get(adventure.id).name === entry.name, "French adventure index");
+        await adventure.sheet.render({force: true});
+        // The native Adventure importer is a legacy application: render()
+        // returns before its DOM is attached, unlike the system's v2 sheets.
+        for (let attempt = 0; attempt < 50 && !(adventure.sheet.element[0] ?? adventure.sheet.element).textContent; attempt++) await new Promise(resolve => setTimeout(resolve, 100));
+        assert((adventure.sheet.element[0] ?? adventure.sheet.element).textContent.includes("La Dernière Livraison"), "French adventure importer");
+        await adventure.sheet.close();
+        const collections = {actors: game.actors, items: game.items, journal: game.journal, scenes: game.scenes, folders: game.folders};
+        for (const [key, collection] of Object.entries(collections)) {
+          assert(!adventure.toObject()[key].some(document => collection.has(document._id)), "adventure QA refuses to overwrite existing documents");
+        }
+        try {
+          await adventure.import();
+          const imported = Object.fromEntries(Object.entries(collections).map(([key, collection]) =>
+            [key, adventure.toObject()[key].map(document => collection.get(document._id)?.toObject())]));
+          for (const key of Object.keys(collections)) check(imported[key], entry[key], `imported.${key}`);
+          for (const journal of imported.journal) {
+            assert(journal.ownership.default === 0, "French journal remains private");
+            for (const [, uuid] of journal.pages[0].text.content.matchAll(/@UUID\[([^\]]+)\]/g)) assert(await fromUuid(uuid), `French link resolves: ${uuid}`);
+          }
+          for (const actor of imported.actors) {
+            const document = game.actors.get(actor._id);
+            await document.sheet.render({force: true});
+            assert(document.sheet.element.textContent.includes("Retrouver Yui"), "French biography rendered on actor sheet");
+            await document.sheet.close();
+          }
+        } finally {
+          for (const [key, collection] of Object.entries(collections)) {
+            const ids = adventure.toObject()[key].filter(document => collection.has(document._id)).map(document => document._id);
+            if (ids.length) await collection.documentClass.deleteDocuments(ids);
+          }
+        }
+        continue;
+      }
       assert(documents.length === Object.keys(translation.entries).length, `${pack.collection}: every entry present`);
       for (const doc of documents) {
         const entry = translation.entries[doc.id];
@@ -82,8 +139,9 @@ try {
     try {
       const source = await game.packs.get("tokyo-ghoul-unofficial.edges").getDocument("814adc493d0ca42c");
       const [edge] = await actor.createEmbeddedDocuments("Item", [source.toObject()]);
-      assert(edge.name === "Tranchant" && edge.system.ruleId === "sharpened", "import preserves French name and mechanical ID");
-      const hardySource = (await game.packs.get("tokyo-ghoul-unofficial.edges").getDocuments()).find(i => i.system.ruleId === "hardy" && i.system.category === "ghoul");
+      assert(edge.name === "Tranchant" && edge.system.ruleId === source.system.ruleId, "import preserves French name and source mechanical ID");
+      assert((edge.system.ruleId || edge.flags.babele?.originalName?.toLowerCase()) === "sharpened", "import retains mechanical rule identity");
+      const hardySource = (await game.packs.get("tokyo-ghoul-unofficial.edges").getDocuments()).find(i => (i.system.ruleId || i.flags.babele?.originalName?.toLowerCase()) === "hardy" && i.system.category === "ghoul");
       const [hardy] = await actor.createEmbeddedDocuments("Item", [hardySource.toObject()]);
       assert(hardy.name === "Robuste" && actor.getEdgeModifiers().blockBonus === 3, "translated Hardy still grants +3 Block");
       await actor.sheet.render({force: true});
@@ -96,7 +154,7 @@ try {
     assert(option?.textContent.trim() === "Tranchant (1)", "builder uses French label and stable ID");
     await builder.close();
     for (const entry of Object.values(expected["tokyo-ghoul-unofficial._packs-folders"].entries)) {
-      assert(game.packs.folders.some(folder => folder.name === entry.name), `sidebar folder: ${entry.name}`);
+      assert(game.packs.folders.some(folder => folder.name === entry), `sidebar folder: ${entry}`);
     }
     return {checks, language: game.i18n.lang, version: game.version};
   }, packs);
@@ -116,7 +174,7 @@ try {
     if (!game.settings.settings.get("babele.showOriginalName").config) throw new Error("English original-name setting restoration failed");
     if (document.body.classList.contains("tg-fr-active")) throw new Error("French visibility rules leaked into English");
     const item = await game.packs.get("tokyo-ghoul-unofficial.edges").getDocument("814adc493d0ca42c");
-    if (item.name !== "Sharpened" || item.system.ruleId !== "sharpened") throw new Error("English source restoration failed");
+    if (item.name !== "Sharpened" || (item.system.ruleId && item.system.ruleId !== "sharpened")) throw new Error("English source restoration failed");
     await game.settings.set("core", "language", "fr");
   });
   result.checks.push("English compendium content and settings restored when changing language");

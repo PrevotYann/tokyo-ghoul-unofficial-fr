@@ -2,7 +2,7 @@
   "id": "tokyo-ghoul-unofficial-fr",
   "title": "Tokyo Ghoul : traduction française",
   "description": "Traduction française du système Tokyo Ghoul: Unofficial TTRPG : fiches, création de personnage, combat, progression et contenu des compendiums. Terminologie cohérente avec l’univers de Tokyo Ghoul.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "authors": [
     {
       "name": "PrevotYann",
@@ -21,7 +21,7 @@
         "type": "system",
         "compatibility": {
           "minimum": "0.3.0",
-          "verified": "0.3.0"
+          "verified": "0.4.1"
         }
       }
     ],
@@ -50,5 +50,5 @@
   ],
   "url": "https://github.com/PrevotYann/tokyo-ghoul-unofficial-fr",
   "manifest": "https://github.com/PrevotYann/tokyo-ghoul-unofficial-fr/releases/latest/download/module.json",
-  "download": "https://github.com/PrevotYann/tokyo-ghoul-unofficial-fr/releases/download/v1.1.0/tokyo-ghoul-unofficial-fr.zip"
+  "download": "https://github.com/PrevotYann/tokyo-ghoul-unofficial-fr/releases/download/v1.2.0/tokyo-ghoul-unofficial-fr.zip"
 }

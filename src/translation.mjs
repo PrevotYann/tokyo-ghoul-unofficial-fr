@@ -1,3 +1,5 @@
+import {translateAdventureDocuments} from "./adventure-translation.mjs";
+
 const MODULE_ID = "tokyo-ghoul-unofficial-fr";
 const SYSTEM_ID = "tokyo-ghoul-unofficial";
 const enabled = () => game.system.id === SYSTEM_ID && game.i18n.lang === "fr";
@@ -5,6 +7,7 @@ const enabled = () => game.system.id === SYSTEM_ID && game.i18n.lang === "fr";
 // Register before Babele loads sources; it translates both indexes and documents.
 Hooks.once("babele.init", babele => {
   if (game.system.id !== SYSTEM_ID) return;
+  babele.registerConverters({tgAdventureDocuments: translateAdventureDocuments});
   babele.register({module: MODULE_ID, lang: "fr", dir: "compendium/fr"});
 });
 
@@ -14,7 +17,7 @@ export function translatePackFolderNames(folders, packs, translations) {
     if (!packs.some(pack => pack.collection.startsWith(`${SYSTEM_ID}.`)
       && (pack.folder?.id ?? pack.folder) === folder.id)) continue;
     const original = folder.originalName ?? folder.name;
-    const translated = translations[original]?.name;
+    const translated = typeof translations[original] === "string" ? translations[original] : translations[original]?.name;
     if (!translated) continue;
     folder.originalName = original;
     folder.name = translated;
